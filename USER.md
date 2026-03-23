@@ -23,6 +23,13 @@
   - `Model: GPT-5.4`
   - `Hardness: Codex`
 
+## 双仓偏好
+
+- 希望长期采用 `agent-native-scriptorium` 与 `agent-native-vault` 的双仓结构。
+- 默认路由是：不确定是否适合公开的内容，先进入 `vault`，而不是直接进入 `scriptorium`。
+- 经过脱敏、提炼、可被外部阅读和复用的内容，再晋升到 `scriptorium`。
+- 如果同一主题同时有私密原稿与公开版本，公开版本优先保留结论和必要上下文，不复制全部私密细节。
+
 ## 对内容形态的偏好
 
 - 如果内容更偏“人类阅读、理解、学习”，优先落为 `playbook`、`solution` 或 `learning` 笔记。
