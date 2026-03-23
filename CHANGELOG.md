@@ -42,3 +42,8 @@
 - 在 `AGENTS.md` 中明确规定：本仓库的 skill 默认遵循 Anthropic 官方 agent skills 规范
 - 在 `skills/README.md` 中补充 skill 编写规则、推荐目录结构和官方参考链接
 - 新增 `skills/template/SKILL.md`，作为后续新 skill 的默认起点
+
+### Idea 孵化能力
+
+- 新增 `ideas/` 目录，用于存放待孵化的产品方向与系统构想
+- 记录第一条产品 idea：可迁移、可迭代的 agent-native 知识库/记忆系统

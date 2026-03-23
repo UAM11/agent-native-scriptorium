@@ -2,7 +2,7 @@
 
 - Created: YYYY-MM-DD
 - Updated: YYYY-MM-DD
-- Type: playbook | solution | learning | prompt | skill
+- Type: playbook | solution | learning | prompt | skill | idea
 - Status: draft | verified | needs-review
 - Tags: tag1, tag2, tag3
 - Model: GPT-5.4

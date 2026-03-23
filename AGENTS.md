@@ -33,6 +33,7 @@
 
 - `playbooks/`：可执行的操作指南与经验证的排障流程
 - `skills/`：面向 agent 复用的操作封装
+- `ideas/`：待孵化的产品方向、系统想法和架构草图
 - `solutions/`：具体问题、推理过程与最终解决方案
 - `learning/`：学习笔记、概念整理、阅读痕迹与解释性资料
 - `prompts/`：可复用的提示词模式、工作流和交互配方
@@ -55,7 +56,7 @@
 ```md
 - Created: YYYY-MM-DD
 - Updated: YYYY-MM-DD
-- Type: playbook | solution | learning | prompt | skill
+- Type: playbook | solution | learning | prompt | skill | idea
 - Status: draft | verified | needs-review
 - Tags: tag1, tag2, tag3
 - Model: GPT-5.4
