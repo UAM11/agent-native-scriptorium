@@ -84,6 +84,38 @@
 - 一个 `playbook` 作为人类可读的知识条目
 - 一个 `skill` 作为 agent 可复用的操作封装
 
+## Skill 编写规范
+
+当在本仓库中新增或修改 `skill` 时，默认应遵循 Anthropic 官方 agent skills 的结构与最佳实践。
+
+本仓库中的默认要求：
+
+- 每个 skill 使用独立目录。
+- skill 目录中必须有 `SKILL.md`。
+- `SKILL.md` 必须包含 YAML frontmatter。
+- frontmatter 至少包含：
+  - `name`
+  - `description`
+- `description` 必须同时回答两件事：
+  - 这个 skill 做什么
+  - 应该在什么情况下使用
+- `SKILL.md` 应保持短小、可触发、可执行。
+- 更长的说明应下沉到：
+  - `references/`
+  - `scripts/`
+  - `assets/`
+- 不要在单个 skill 目录中再放一个 `README.md` 去替代 `SKILL.md`。
+- 新 skill 优先从 `skills/template/SKILL.md` 开始。
+
+简化理解：
+
+- `SKILL.md` 负责“告诉 agent 何时触发、如何开始”
+- `references/` 负责“需要时再读取的长说明”
+- `scripts/` 负责“可直接执行的程序”
+- `assets/` 负责“模板、样例、静态资源”
+
+如果一个 skill 过长、过杂、过像说明书，应优先拆分 supporting files，而不是继续把所有细节堆进 `SKILL.md`。
+
 ## 写作风格
 
 - 优先为“未来复用”而写，而不是为“即时聊天”而写。

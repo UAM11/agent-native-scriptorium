@@ -36,3 +36,9 @@
 - 将知识条目中的元数据字段名统一为英文
 - 按 Anthropic skills 规范重写 `skills/github-push-stable-setup/SKILL.md`
 - 为该 skill 增加 `references/` 辅助文档，采用渐进式加载结构
+
+### Skill 维护规范升级
+
+- 在 `AGENTS.md` 中明确规定：本仓库的 skill 默认遵循 Anthropic 官方 agent skills 规范
+- 在 `skills/README.md` 中补充 skill 编写规则、推荐目录结构和官方参考链接
+- 新增 `skills/template/SKILL.md`，作为后续新 skill 的默认起点
