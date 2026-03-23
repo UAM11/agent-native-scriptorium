@@ -11,17 +11,17 @@
 - 根目录 `README.md` 使用英文。
 - 除 `README.md` 外，仓库内其余维护性文档优先使用中文。
 - 每一份新的知识记录型 Markdown，默认都应包含元数据：
-  - 创建时间
-  - 更新时间
-  - 类型
-  - 状态
-  - 标签
+  - Created
+  - Updated
+  - Type
+  - Status
+  - Tags
   - Model
   - Hardness
-  - 来源
+  - Source
 - 当前默认值：
-  - `Model：GPT-5.4`
-  - `Hardness：Codex`
+  - `Model: GPT-5.4`
+  - `Hardness: Codex`
 
 ## 对内容形态的偏好
 

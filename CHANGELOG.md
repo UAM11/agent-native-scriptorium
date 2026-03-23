@@ -30,3 +30,9 @@
 - 在知识条目元数据中加入 `Model` 与 `Hardness`
 - 将 `AGENTS.md` 与 `USER.md` 的职责边界明确拆分
 - 为 `github-push-stable-setup` 增加对应的 `skill` 版本
+
+### 元数据与 Skill 规范化
+
+- 将知识条目中的元数据字段名统一为英文
+- 按 Anthropic skills 规范重写 `skills/github-push-stable-setup/SKILL.md`
+- 为该 skill 增加 `references/` 辅助文档，采用渐进式加载结构

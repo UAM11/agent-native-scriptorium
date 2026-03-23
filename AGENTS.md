@@ -53,14 +53,14 @@
 当笔记需要更强的可追踪性时，可在开头使用：
 
 ```md
-- 创建时间：YYYY-MM-DD
-- 更新时间：YYYY-MM-DD
-- 类型：playbook | solution | learning | prompt | skill
-- 状态：draft | verified | needs-review
-- 标签：tag1, tag2, tag3
-- Model：GPT-5.4
-- Hardness：Codex
-- 来源：一句话说明来源
+- Created: YYYY-MM-DD
+- Updated: YYYY-MM-DD
+- Type: playbook | solution | learning | prompt | skill
+- Status: draft | verified | needs-review
+- Tags: tag1, tag2, tag3
+- Model: GPT-5.4
+- Hardness: Codex
+- Source: one-line origin note
 ```
 
 如果某条记录使用了不同模型或不同 agent 形态，应显式覆盖默认值。

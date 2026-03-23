@@ -1,13 +1,13 @@
 # GitHub Push 稳定方案
 
-- 创建时间：2026-03-23
-- 更新时间：2026-03-23
-- 类型：playbook
-- 状态：verified
-- 标签：github, git, ssh, networking, windows
-- Model：GPT-5.4
-- Hardness：Codex
-- 来源：一次在 Windows 环境下真实排障并验证成功的修复过程
+- Created: 2026-03-23
+- Updated: 2026-03-23
+- Type: playbook
+- Status: verified
+- Tags: github, git, ssh, networking, windows
+- Model: GPT-5.4
+- Hardness: Codex
+- Source: verified from a real Windows debugging session
 
 ## 背景
 

@@ -1,67 +1,126 @@
-# GitHub Push Stable Setup Skill
+---
+name: github-push-stable-setup
+description: Diagnoses and stabilizes GitHub push failures on Windows by moving unreliable HTTPS Git transport to SSH over 443 and validating end-to-end connectivity. Use when git push to github.com fails with "Connection was reset", "Couldn't connect to server", timeout errors, or when dry-run works but the real push fails. Do not use for clear permission errors, missing repository access, or non-GitHub remotes.
+metadata:
+  author: UAM11
+  version: 1.0.0
+  category: git-networking
+  tags: [github, git, ssh, windows, networking]
+---
 
-- 创建时间：2026-03-23
-- 更新时间：2026-03-23
-- 类型：skill
-- 状态：verified
-- 标签：github, git, ssh, networking, windows
-- Model：GPT-5.4
-- Hardness：Codex
-- 来源：由 `playbooks/github/github-push-stable-setup.md` 提炼而来
+# GitHub Push Stable Setup
 
-## 适用场景
+## What this skill does
 
-当在 Windows 环境中向 GitHub 执行 `git push` 时，如果 `HTTPS` 路径不稳定，出现如下症状，可使用本 skill：
+This skill turns an unstable GitHub push path into a stable one on Windows systems.
 
-- `Recv failure: Connection was reset`
-- `Couldn't connect to server`
-- `git push --dry-run` 正常，但真实 push 失败
+Its default strategy is:
 
-## 目标
+1. confirm the failure is transport-related rather than permission-related
+2. move GitHub traffic away from unreliable HTTPS push
+3. route GitHub Git traffic through SSH over port 443
+4. validate with both read-only and real push operations
 
-将 GitHub 的 Git 传输从不稳定的 `HTTPS` 切换到更稳定的 `SSH over 443`，并优先使用 Windows 自带 `OpenSSH`。
+## When to use it
 
-## 前置条件
+Use this skill when the target remote is GitHub and symptoms look like transport instability, for example:
 
-- 已安装 Git
-- Windows 系统可用 `C:\Windows\System32\OpenSSH\ssh.exe`
-- 本机已有可用于 GitHub 的 SSH key，或允许后续补配
+- `fatal: unable to access 'https://github.com/...': Recv failure: Connection was reset`
+- `Failed to connect to github.com port 443`
+- `git push --dry-run` works but `git push` fails
+- `git ls-remote` works but real upload fails
 
-## 执行步骤
+Do not use it as the primary path for:
 
-1. 先验证问题是否真的出在 `HTTPS push` 链路，而不是仓库权限错误。
-2. 检查 `github.com:443` 是否可达，确认不是纯粹的网络中断。
-3. 将 GitHub 远程改为 SSH 形式，或通过 Git 全局配置把 `https://github.com/...` 自动改写为 `git@github.com:...`。
-4. 通过包装脚本或 `core.sshCommand`，强制 GitHub 连接转到 `ssh.github.com:443`。
-5. 强制使用 Windows 自带 `OpenSSH`，避免依赖环境中不稳定的 SSH 实现。
-6. 使用 `git ls-remote` 和真实 `git push` 做验证。
+- `403`, `404`, or explicit repository permission errors
+- wrong remote URLs
+- missing GitHub SSH keys
+- non-GitHub remotes
 
-## 推荐验证命令
+## Workflow
 
-```bash
-git config --global --get core.sshCommand
-git config --global --get-regexp '^url\\..*\\.insteadOf$'
-git ls-remote https://github.com/<owner>/<repo>.git
-git ls-remote git@github.com:<owner>/<repo>.git
-git push
-```
+### Step 1: Diagnose the failure class
 
-## 成功判据
+First, confirm the issue is really about transport reliability.
 
-- `git ls-remote` 能正常返回提交哈希
-- `git push` 能真正完成，而不是只在 dry-run 下成功
+Use `references/diagnosis-checklist.md` to separate:
 
-## 回滚
+- connectivity problems
+- auth or permission problems
+- HTTPS-upload-only failures
 
-```bash
-git config --global --unset core.sshCommand
-git config --global --unset-all url.git@github.com:.insteadOf
-```
+If the symptoms point to permission or repository access problems, stop and solve that first.
 
-如果使用了包装脚本，还应手动删除对应脚本文件。
+### Step 2: Apply the stable transport pattern
 
-## 与 playbook 的关系
+Use `references/windows-github-ssh-over-443.md` for the exact setup pattern.
 
-本 skill 是对以下知识条目的执行化封装：
+Preferred approach:
 
-- `playbooks/github/github-push-stable-setup.md`
+- use SSH for GitHub remotes
+- route SSH through `ssh.github.com:443`
+- prefer Windows built-in `OpenSSH` if the bundled Git SSH implementation is unstable
+- if needed, use `core.sshCommand` or a wrapper script to enforce the route
+
+### Step 3: Validate progressively
+
+Validate in this order:
+
+1. `git ls-remote` against the GitHub remote
+2. read-only remote access over the new path
+3. real `git push`
+
+Do not treat `git push --dry-run` as sufficient proof. The real upload path must succeed.
+
+## Success criteria
+
+The skill has succeeded when:
+
+- GitHub remote access works over the new SSH path
+- `git ls-remote` returns commit hashes
+- a real `git push` succeeds without HTTPS reset errors
+
+## Common failure modes
+
+### SSH auth still fails
+
+Likely cause:
+
+- no valid GitHub SSH key is available
+
+Action:
+
+- stop treating this as a transport-only issue
+- fix SSH authentication first
+
+### The skill triggers but the problem is actually permissions
+
+Likely cause:
+
+- remote exists, but user lacks repo access
+
+Action:
+
+- verify the repository, account, and permission model before changing transport
+
+### GitHub is not the remote
+
+Action:
+
+- do not apply the GitHub-specific SSH-over-443 pattern blindly
+
+## Example triggers
+
+- "git push keeps failing to GitHub on Windows"
+- "github.com port 443 connection reset during push"
+- "dry-run works but real push fails"
+- "please stabilize GitHub push networking"
+
+## Bundled references
+
+- `references/diagnosis-checklist.md`
+- `references/windows-github-ssh-over-443.md`
+
+## Related archive note
+
+- Human-readable playbook: `playbooks/github/github-push-stable-setup.md`
