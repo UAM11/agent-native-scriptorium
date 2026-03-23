@@ -16,7 +16,7 @@
 
 - `playbooks/`: operational guides and step-by-step fixes
 - `skills/`: agent-oriented operational packaging for reusable procedures
-- `ideas/`: incubating product directions, system concepts, and speculative architectures
+- `ideas/`: incubating ideas across product, research, life, work, entrepreneurship, and everyday imagination
 - `solutions/`: concrete problem/solution writeups
 - `learning/`: study notes, conceptual summaries, reading traces
 - `prompts/`: reusable prompt patterns and workflows
