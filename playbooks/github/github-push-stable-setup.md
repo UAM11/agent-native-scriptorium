@@ -5,6 +5,8 @@
 - 类型：playbook
 - 状态：verified
 - 标签：github, git, ssh, networking, windows
+- Model：GPT-5.4
+- Hardness：Codex
 - 来源：一次在 Windows 环境下真实排障并验证成功的修复过程
 
 ## 背景
@@ -118,3 +120,7 @@ C:\Users\UAMC\git-tools\git-ssh-github-443.ps1
 - 这套方案是针对 GitHub 定制的，不适用于所有 SSH 主机。
 - 网络环境如果变化了，这套方案依然可以继续保留，不影响正常使用。
 - 如果本机 SSH key 变了，仍然需要保证 GitHub 侧的 SSH 认证是有效的。
+
+## 相关条目
+
+- 对应 skill 版本：`skills/github-push-stable-setup/SKILL.md`

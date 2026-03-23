@@ -15,14 +15,18 @@
 ## Repository Shape
 
 - `playbooks/`: operational guides and step-by-step fixes
+- `skills/`: agent-oriented operational packaging for reusable procedures
 - `solutions/`: concrete problem/solution writeups
 - `learning/`: study notes, conceptual summaries, reading traces
 - `prompts/`: reusable prompt patterns and workflows
 - `templates/`: note templates and documentation scaffolds
+- `CHANGELOG.md`: a running record of meaningful repository changes
+- `USER.md`: personalized user preferences for how this archive should be maintained
 
 ## Current Holdings
 
 - [GitHub Push Stable Setup](playbooks/github/github-push-stable-setup.md): a verified fix for unstable GitHub `HTTPS` pushes by routing Git traffic through `SSH over 443`
+- [GitHub Push Stable Setup Skill](skills/github-push-stable-setup/SKILL.md): the same procedure packaged in a more agent-executable form
 
 ## Maintenance Philosophy
 
@@ -42,7 +46,9 @@
 
 ## Operating Rules For Agents
 
-See [AGENTS.md](AGENTS.md). It defines the conventions that other agents should follow when extending this repository.
+- See [AGENTS.md](AGENTS.md) for repository-wide operating rules that apply to any agent.
+- See [USER.md](USER.md) for user-specific preferences, defaults, and maintenance style choices.
+- Update [CHANGELOG.md](CHANGELOG.md) whenever you make a meaningful repository change.
 
 ## Roadmap
 

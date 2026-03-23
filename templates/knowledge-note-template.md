@@ -2,9 +2,11 @@
 
 - 创建时间：YYYY-MM-DD
 - 更新时间：YYYY-MM-DD
-- 类型：playbook | solution | learning | prompt
+- 类型：playbook | solution | learning | prompt | skill
 - 状态：draft | verified | needs-review
 - 标签：tag1, tag2, tag3
+- Model：GPT-5.4
+- Hardness：Codex
 - 来源：这份笔记来自哪里
 
 ## 背景
