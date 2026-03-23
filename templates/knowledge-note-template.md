@@ -1,38 +1,38 @@
-# Title
+# 标题
 
-- Created: YYYY-MM-DD
-- Updated: YYYY-MM-DD
-- Type: playbook | solution | learning | prompt
-- Status: draft | verified | needs-review
-- Tags: tag1, tag2, tag3
-- Source: where this note came from
+- 创建时间：YYYY-MM-DD
+- 更新时间：YYYY-MM-DD
+- 类型：playbook | solution | learning | prompt
+- 状态：draft | verified | needs-review
+- 标签：tag1, tag2, tag3
+- 来源：这份笔记来自哪里
 
-## Context
+## 背景
 
-What situation produced this note? What was happening?
+这份笔记是在什么情境下产生的？当时发生了什么？
 
-## Problem Or Question
+## 问题或目标
 
-What exactly needed to be solved, understood, or preserved?
+到底有什么问题需要解决、理解或保留下来？
 
-## Distilled Insight
+## 提炼后的结论
 
-What is the reusable answer?
+这份资料最可复用的核心答案是什么？
 
-## Procedure
+## 操作步骤
 
-1. Step one
-2. Step two
-3. Step three
+1. 第一步
+2. 第二步
+3. 第三步
 
-## Verification
+## 验证
 
-What was tested? On what date? In what environment?
+验证了什么？在什么日期？什么环境下完成？
 
-## Caveats
+## 注意事项
 
-What might fail, drift, or require re-checking later?
+哪些部分可能失效、漂移，或需要未来重新核查？
 
-## Related Notes
+## 相关笔记
 
-- Link related artifacts here
+- 在这里链接相关资料

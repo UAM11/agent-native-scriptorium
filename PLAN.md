@@ -1,48 +1,48 @@
-# Plan
+# 计划
 
-## North Star
+## 北极星目标
 
-Build a durable, searchable, agent-friendly repository of solutions and learning artifacts so that useful work compounds instead of disappearing.
+构建一个可持续积累、可检索、对 agent 友好的知识仓库，让解决方案、学习资料和高价值经验能够不断复利，而不是消失在聊天记录里。
 
-## Phase 1: Foundation
+## 第一阶段：地基搭建
 
-- [x] Establish repository purpose and tone
-- [x] Add a root `README.md`
-- [x] Add a maintenance protocol for future agents
-- [x] Seed the repository with the first verified playbook
-- [x] Add a reusable note template
+- [x] 明确仓库定位与整体气质
+- [x] 补齐根目录 `README.md`
+- [x] 建立面向未来 agent 的维护协议
+- [x] 放入第一份经过验证的 playbook
+- [x] 增加一个可复用的知识笔记模板
 
-## Phase 2: Intake Workflow
+## 第二阶段：资料入库流程
 
-- [ ] Define a consistent metadata habit for new notes
-- [ ] Add a lightweight catalog or index once holdings grow
-- [ ] Create a simple convention for tagging notes by topic and status
-- [ ] Standardize when to store something as a playbook vs. a solution vs. a learning note
+- [ ] 为新增笔记定义统一的元数据习惯
+- [ ] 当内容增多后补一个轻量级索引或目录
+- [ ] 建立按主题和状态打标签的简单规范
+- [ ] 明确什么内容应该放进 `playbooks/`、`solutions/`、`learning/`
 
-## Phase 3: Retrieval And Reuse
+## 第三阶段：检索与复用
 
-- [ ] Add cross-links between related notes
-- [ ] Build small thematic collections for recurring topics
-- [ ] Separate evergreen guidance from time-sensitive guidance
-- [ ] Add periodic verification for notes tied to tools, APIs, platforms, or network environments
+- [ ] 为相关笔记建立交叉链接
+- [ ] 围绕高频主题整理专题集合
+- [ ] 将常青内容与时效性内容分开管理
+- [ ] 对依赖工具、平台、API、网络环境的笔记建立定期复核机制
 
-## Phase 4: Agent Collaboration
+## 第四阶段：多 Agent 协作
 
-- [ ] Refine `AGENTS.md` based on actual multi-agent usage
-- [ ] Add a changelog or session log pattern if concurrent maintenance becomes common
-- [ ] Introduce review rules for agent-written notes that affect money, security, credentials, or production systems
+- [ ] 根据真实协作情况迭代 `AGENTS.md`
+- [ ] 如果并行维护增多，补充 changelog 或 session log 规范
+- [ ] 对涉及金钱、安全、凭证、生产环境的笔记增加更严格的审查规则
 
-## Ongoing Maintenance Loop
+## 持续维护闭环
 
-1. Capture: save the useful outcome.
-2. Distill: rewrite it so it can stand alone.
-3. Place: file it into the correct directory.
-4. Link: connect it to adjacent notes when relevant.
-5. Verify: check time-sensitive claims.
-6. Prune: merge duplicates and archive low-value noise.
+1. 记录：把真正有价值的结果保存下来。
+2. 蒸馏：把它改写成能独立成立的资料。
+3. 归位：放到最合适的目录中。
+4. 连接：必要时和相关笔记互相链接。
+5. 验证：对时效性内容补充验证信息。
+6. 修剪：合并重复内容，清理低价值噪音。
 
-## Immediate Next Additions
+## 近期优先补充
 
-- A first `solutions/` note based on a real debugging session
-- A first `learning/` note distilled from an agent-assisted study session
-- A first `prompts/` artifact that captures a reusable way of asking for structured help
+- 第一篇来自真实排障过程的 `solutions/` 笔记
+- 第一篇来自 agent 辅助学习过程的 `learning/` 笔记
+- 第一份可复用的 `prompts/` 工作流模板

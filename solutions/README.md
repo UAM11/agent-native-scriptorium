@@ -1,5 +1,5 @@
 # solutions
 
-This folder stores concrete problem/solution writeups.
+这个目录用于存放具体的问题与解决方案记录。
 
-Use it when the main value is a resolved issue, a debugging trail, or a specific fix that should be reusable later.
+当一份内容的主要价值在于“一个问题是如何被解决的”、或者“某次排障过程值得复用”时，就应该优先放在这里。

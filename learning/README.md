@@ -1,5 +1,5 @@
 # learning
 
-This folder stores distilled study notes, concept explanations, reading traces, and structured learning artifacts.
+这个目录用于存放蒸馏后的学习笔记、概念解释、阅读痕迹和结构化学习资料。
 
-Use it when the main value is understanding, not just fixing.
+当一份内容的主要价值在于“帮助理解”，而不只是“修掉一个问题”时，就应该优先放在这里。

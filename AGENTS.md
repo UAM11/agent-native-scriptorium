@@ -1,69 +1,69 @@
 # AGENTS.md
 
-This repository is a long-term knowledge archive. Treat it like a maintained library, not a scratchpad.
+这个仓库是一个长期维护的知识档案库，请把它当作持续经营的图书馆，而不是一次性的草稿堆。
 
-## Mission
+## 使命
 
-Preserve high-value outputs produced with agents so they remain reusable, composable, and understandable by future humans and future agents.
+保存由 agent 参与产生的高价值成果，让它们对未来的人类读者和未来的 agent 都仍然可理解、可复用、可继续扩展。
 
-## Default Rules
+## 默认规则
 
-- Preserve existing material unless there is a clear reason to restructure it.
-- Prefer additive edits over destructive rewrites.
-- Do not remove historical context if it still explains why a note exists.
-- Keep filenames in lowercase kebab-case when creating new files.
-- Markdown is the default format unless another format is clearly better.
-- Never commit secrets, credentials, tokens, private keys, cookies, or raw personal data.
+- 除非有明确理由，否则不要随意重构已有资料。
+- 优先做增量修改，而不是大面积推倒重写。
+- 只要历史上下文仍然有解释价值，就不要轻易删除。
+- 新建文件时，文件名默认使用小写 kebab-case。
+- 默认使用 Markdown，除非有更合适的格式。
+- 严禁提交密钥、令牌、凭证、cookie、私密个人数据或其他敏感信息。
 
-## Folder Intent
+## 目录意图
 
-- `playbooks/`: operational procedures and verified step-by-step fixes
-- `solutions/`: specific problems paired with reasoning and outcome
-- `learning/`: study notes, concept maps, and explanatory material
-- `prompts/`: reusable prompt patterns, workflows, and interaction recipes
-- `templates/`: reusable note structures for consistency
+- `playbooks/`：可执行的操作指南与经验证的排障流程
+- `solutions/`：具体问题、推理过程与最终解决方案
+- `learning/`：学习笔记、概念整理、阅读痕迹与解释性资料
+- `prompts/`：可复用的提示词模式、工作流和交互配方
+- `templates/`：统一风格与结构时可复用的模板
 
-## What A Good Note Should Contain
+## 一份好笔记通常应包含什么
 
-Each durable note should usually include:
+每一份值得长期保留的笔记，通常应尽量包含：
 
-- what problem or question it addresses
-- why the issue mattered
-- the solution or distilled explanation
-- verification details when the content is environment-sensitive
-- enough context that a future reader does not need the original chat
+- 它解决了什么问题或回答了什么问题
+- 这个问题为什么重要
+- 结论、方案或提炼后的解释
+- 如果内容受环境影响，需要附上验证信息
+- 足够独立的上下文，让未来读者不必回看原始对话
 
-## Recommended Metadata Block
+## 推荐元数据块
 
-Use this near the top of durable notes when it helps:
+当笔记需要更强的可追踪性时，可在开头使用：
 
 ```md
-- Created: YYYY-MM-DD
-- Updated: YYYY-MM-DD
-- Type: playbook | solution | learning | prompt
-- Status: draft | verified | needs-review
-- Tags: tag1, tag2, tag3
-- Source: short origin note
+- 创建时间：YYYY-MM-DD
+- 更新时间：YYYY-MM-DD
+- 类型：playbook | solution | learning | prompt
+- 状态：draft | verified | needs-review
+- 标签：tag1, tag2, tag3
+- 来源：一句话说明来源
 ```
 
-## Maintenance Workflow
+## 维护流程
 
-1. Read the existing repository shape before adding new files.
-2. Place new material in the most appropriate folder.
-3. Use the template in `templates/knowledge-note-template.md` when starting from scratch.
-4. Update `README.md` when the new artifact is a top-level, high-value entry point.
-5. If a note supersedes another note, link the older note to the newer one instead of silently replacing history.
+1. 在新增内容前，先理解仓库现有结构。
+2. 把新材料放入最合适的目录。
+3. 从零开始写时，优先复用 `templates/knowledge-note-template.md`。
+4. 如果新增内容是高价值入口，记得同步更新 `README.md`。
+5. 如果一份新笔记取代了旧笔记，优先通过链接建立承接关系，而不是悄悄抹去历史。
 
-## Writing Style
+## 写作风格
 
-- Optimize for future reuse, not chat-like immediacy.
-- Be concrete.
-- Keep procedures executable.
-- Mark assumptions clearly.
-- If a claim may go stale, say how and when it was verified.
+- 优先为“未来复用”而写，而不是为“即时聊天”而写。
+- 具体，不空泛。
+- 步骤要能执行。
+- 假设要写明。
+- 任何可能过时的结论，都尽量注明验证方式与验证时间。
 
-## Change Discipline
+## 变更纪律
 
-- Keep commits focused.
-- Avoid large drive-by rewrites.
-- If you introduce a new convention, document it in `README.md`, `PLAN.md`, or this file.
+- 保持提交聚焦。
+- 避免顺手式的大范围改写。
+- 如果引入了新规范，请同步记录到 `README.md`、`PLAN.md` 或本文件。

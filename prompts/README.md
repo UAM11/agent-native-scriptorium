@@ -1,5 +1,5 @@
 # prompts
 
-This folder stores reusable prompt patterns, interaction recipes, and prompt scaffolds that repeatedly produce useful results.
+这个目录用于存放可复用的提示词模式、交互配方，以及能够稳定产出有用结果的 prompt 脚手架。
 
-Use it when the main value is a reusable way of asking or guiding.
+当一份内容的主要价值在于“如何提问”或“如何引导 agent 工作”时，就应该优先放在这里。
