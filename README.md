@@ -41,6 +41,8 @@ English | [简体中文](README.zh-CN.md)
 - [GitHub Push Stable Setup Skill](skills/github-push-stable-setup/SKILL.md): the same procedure packaged in a more agent-executable form
 - [Portable Agent Memory System](ideas/portable-agent-memory-system.md): an incubating idea for turning high-value chat outputs into portable, iterable knowledge assets
 - [Dual Repo Workflow](playbooks/repository/dual-repo-workflow.md): the routing and promotion rules for operating the public `scriptorium` alongside the private `vault`
+- [Repo Sync Workflow](playbooks/repository/repo-sync-workflow.md): a user-directed method for choosing a primary repo and running full or partial sync between the paired archives
+- [Repo Sync Skill](skills/repo-sync/SKILL.md): the agent-facing sync procedure for parsing natural-language sync requests safely
 
 ## Maintenance Philosophy
 
@@ -56,7 +58,7 @@ English | [简体中文](README.zh-CN.md)
 2. Distill it into a reusable note instead of a conversation fragment.
 3. File it into the best-matching folder.
 4. Keep filenames stable, descriptive, and machine-friendly.
-5. When adding a high-value artifact, update this `README` so the archive remains legible at a glance.
+5. When adding a high-value artifact, update `README.md` and `README.zh-CN.md` so the archive remains legible at a glance.
 
 ## Operating Rules For Agents
 

@@ -42,6 +42,8 @@
 - [可迁移的 Agent 记忆系统](ideas/portable-agent-memory-system.md)：关于“把高价值对话沉淀成长期资产”的想法条目
 - [双仓协作工作流](playbooks/repository/dual-repo-workflow.md)：public/private 双仓的路由与晋升规则
 - [知识条目元数据字段说明](playbooks/repository/metadata-field-reference.md)：`Model`、`Harness` 等元数据字段的统一定义
+- [双仓同步工作流](playbooks/repository/repo-sync-workflow.md)：允许用户指定主维护仓，并通过自然语言发起完全同步或部分同步
+- [Repo Sync Skill](skills/repo-sync/SKILL.md)：把自然语言同步请求转成安全可执行操作的 agent 技能
 
 ## 维护哲学
 

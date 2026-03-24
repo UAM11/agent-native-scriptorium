@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repo Sync"
+  short_description: "Run safe full or partial sync between the paired public/private repositories."
+  default_prompt: "Use this skill when the user designates a primary repo and wants to fully or partially sync content to the paired repo while honoring include, exclude, and privacy rules."

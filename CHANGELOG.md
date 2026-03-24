@@ -70,3 +70,9 @@
 - 保留英文 `README.md` 作为根入口
 - 新增中文伴随版 `README.zh-CN.md`，用于中文协作与共建
 - 在 `AGENTS.md` 与 `USER.md` 中补充双语 README 的同步维护约定
+
+### 双仓同步工作流
+
+- 新增 `playbooks/repository/repo-sync-workflow.md`，定义用户指定主维护仓的双仓同步方式
+- 新增 `skills/repo-sync/`，将自然语言同步请求包装为可复用的 agent skill
+- 在 `AGENTS.md`、`USER.md`、`PLAN.md`、双语 `README` 中补充同步规则、自然语言同步约定与入口说明
