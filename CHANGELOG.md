@@ -95,3 +95,8 @@
 - 将当前工作模式调整为“公仓优先”
 - 默认只维护 `agent-native-scriptorium`
 - `agent-native-vault` 暂时冻结，只有在用户明确要求时才重新参与维护或同步
+
+### Changelog 日期校验规则
+
+- 在 `AGENTS.md` 中补充 changelog 维护纪律：更新前先核对 `git log --oneline --date=short`
+- 在同步工作流中补充 `CHANGELOG.md` 的日期校验注意事项，避免再按会话顺序误分日期

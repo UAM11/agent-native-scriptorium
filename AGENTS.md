@@ -156,3 +156,4 @@
 - 保持提交聚焦。
 - 避免顺手式的大范围改写。
 - 如果引入了新规范，请同步记录到 `README.md`、`PLAN.md`、`CHANGELOG.md` 或本文件。
+- 更新 `CHANGELOG.md` 前，先用 `git log --oneline --date=short` 核对相关提交的真实日期，再按绝对日期分组，不要仅凭会话顺序或相对时间判断。
