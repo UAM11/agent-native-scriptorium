@@ -59,6 +59,13 @@
 - 新增 `playbooks/repository/dual-repo-workflow.md`，明确内容路由与私仓晋升公仓流程
 - 在 `README.md`、`AGENTS.md`、`USER.md`、`PLAN.md` 中补充双仓职责与维护偏好
 
+## 2026-03-24
+
+### 元数据字段命名修正
+
+- 将错误的 `Hardness` 统一更正为 `Harness`
+- 同步修正模板、现有知识条目与相关说明文档中的字段名
+
 ### 元数据字段说明补充
 
 - 新增 `playbooks/repository/metadata-field-reference.md`，统一定义知识条目元数据字段
@@ -82,8 +89,6 @@
 - 为双仓同步补充最小句式：`sync <源> -> <目标> <mode> [scope] [exclude] [policy]`
 - 在 `repo-sync` playbook 与 skill references 中加入别名表、最短示例与口令解析说明
 - 在入口文档中补充短口令入口，降低实际使用门槛
-
-## 2026-03-24
 
 ### 当前维护模式调整
 
