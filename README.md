@@ -1,5 +1,7 @@
 # agent-native-scriptorium
 
+English | [简体中文](README.zh-CN.md)
+
 > A delirious scriptorium where agents, bugs, midnight questions, and stray sparks are fermented into strange manuals for learning, making, and surviving the future.
 
 `agent-native-scriptorium` is the public shelf of a dual-repository system for agent-born solutions, distilled study notes, reusable playbooks, and practical learning artifacts. The goal is simple: when a useful answer appears once, we do not let it vanish into chat history. When that answer is still sensitive, unfinished, or too personal to share, it should stay in the private vault until it is ready to be promoted.

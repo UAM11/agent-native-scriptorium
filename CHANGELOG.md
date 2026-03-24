@@ -64,3 +64,9 @@
 - 新增 `playbooks/repository/metadata-field-reference.md`，统一定义知识条目元数据字段
 - 在模板中加入 `Model` 与 `Harness` 的速记说明，减少后续维护时的概念混淆
 - 在 `AGENTS.md` 中加入元数据说明文档入口
+
+### 双语 README 入口
+
+- 保留英文 `README.md` 作为根入口
+- 新增中文伴随版 `README.zh-CN.md`，用于中文协作与共建
+- 在 `AGENTS.md` 与 `USER.md` 中补充双语 README 的同步维护约定
