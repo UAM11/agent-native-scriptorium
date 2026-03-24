@@ -75,3 +75,36 @@ Resolve these fields before editing:
 - overwrite policy
 
 If the user names a topic rather than file paths, derive the candidate file set from the current task context or recent diffs. If multiple interpretations remain plausible, show a short proposed sync scope before editing.
+
+## Shortcut Grammar
+
+Accept this compressed but readable format:
+
+```text
+sync <source> -> <target> <mode> [scope] [exclude] [policy]
+```
+
+Alias table:
+
+- source/target:
+  - `vault` / `private` / `pri`
+  - `scriptorium` / `public` / `pub`
+- mode:
+  - `full`
+  - `part` / `partial`
+
+Common fields:
+
+- scope:
+  - `path:...`
+  - `topic:...`
+  - `change:this-round`
+- exclude:
+  - `exclude:...`
+- policy:
+  - `keep-exclusive`
+  - `no-delete`
+  - `mirror`
+  - `public-safe`
+
+Treat this syntax as a convenience layer, not a rigid parser. If the meaning is clear, proceed. If multiple interpretations remain plausible, summarize the proposed sync scope before editing.

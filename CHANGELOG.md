@@ -76,3 +76,9 @@
 - 新增 `playbooks/repository/repo-sync-workflow.md`，定义用户指定主维护仓的双仓同步方式
 - 新增 `skills/repo-sync/`，将自然语言同步请求包装为可复用的 agent skill
 - 在 `AGENTS.md`、`USER.md`、`PLAN.md`、双语 `README` 中补充同步规则、自然语言同步约定与入口说明
+
+### 同步短口令
+
+- 为双仓同步补充最小句式：`sync <源> -> <目标> <mode> [scope] [exclude] [policy]`
+- 在 `repo-sync` playbook 与 skill references 中加入别名表、最短示例与口令解析说明
+- 在入口文档中补充短口令入口，降低实际使用门槛

@@ -76,3 +76,65 @@ Interpretation:
 Action note:
 
 - mirror deletion is allowed only because the user explicitly requested it
+
+## Shortcut Command Style
+
+User request:
+
+```text
+sync vault -> pub full keep-exclusive
+```
+
+Interpretation:
+
+- primary repo: `agent-native-vault`
+- target repo: `agent-native-scriptorium`
+- mode: full
+- include scope: shared surface
+- exclude scope: repo-exclusive content
+- overwrite policy: non-destructive, keep target-only files
+
+User request:
+
+```text
+sync pub -> vault part path:templates/,skills/repo-sync/ exclude:CHANGELOG.md
+```
+
+Interpretation:
+
+- primary repo: `agent-native-scriptorium`
+- target repo: `agent-native-vault`
+- mode: partial
+- include scope: the two named paths
+- exclude scope: `CHANGELOG.md`
+- overwrite policy: preserve target-only files
+
+User request:
+
+```text
+sync vault -> pub part topic:metadata,repo-sync exclude:private-ideas public-safe
+```
+
+Interpretation:
+
+- primary repo: `agent-native-vault`
+- target repo: `agent-native-scriptorium`
+- mode: partial
+- include scope: files implied by the two named topics
+- exclude scope: private ideas and vault-only sensitive material
+- overwrite policy: preserve target-only files and filter for public-safe output
+
+User request:
+
+```text
+sync pub -> vault full mirror
+```
+
+Interpretation:
+
+- primary repo: `agent-native-scriptorium`
+- target repo: `agent-native-vault`
+- mode: full
+- include scope: shared surface
+- exclude scope: repo-exclusive content unless explicitly overridden
+- overwrite policy: destructive mirror

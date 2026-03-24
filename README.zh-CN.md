@@ -61,6 +61,12 @@
 4. 文件名保持稳定、明确、机器可处理。
 5. 新增高价值入口时，同步更新 `README.md` 和 `README.zh-CN.md`，让仓库一眼可读。
 
+如果只是想快速发起同步，也可以直接用短口令，例如：
+
+```text
+sync vault -> pub full keep-exclusive
+```
+
 ## 给 Agent 的说明
 
 - 通用协作规则见 `AGENTS.md`

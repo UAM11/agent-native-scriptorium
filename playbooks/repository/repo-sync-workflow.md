@@ -117,6 +117,88 @@
 - 哪些内容不要同步
 - 是否允许覆盖，是否允许删除目标仓多余共享文件
 
+## 最短可用口令
+
+如果你不想每次都说完整句子，可以直接使用这一条最小句式：
+
+```text
+sync <源> -> <目标> <mode> [scope] [exclude] [policy]
+```
+
+含义：
+
+- `<源>`：本轮主维护仓
+- `<目标>`：接收同步的一侧
+- `<mode>`：`full` 或 `part`
+- `[scope]`：可选，表示只同步哪些路径、主题或“本次改动”
+- `[exclude]`：可选，表示排除哪些内容
+- `[policy]`：可选，表示是否镜像、是否保留独有文件等策略
+
+### 仓库别名
+
+这些别名都可以混用：
+
+- `vault` / `private` / `pri`
+- `scriptorium` / `public` / `pub`
+
+### mode 别名
+
+- `full`：完全同步共享面
+- `part` / `partial`：部分同步
+
+### 常用 scope 写法
+
+- `path:templates/,skills/repo-sync/`
+- `topic:metadata,repo-sync`
+- `change:this-round`
+
+### 常用 exclude 写法
+
+- `exclude:CHANGELOG.md`
+- `exclude:private-ideas`
+- `exclude:vault-only`
+
+### 常用 policy 写法
+
+- `keep-exclusive`
+- `no-delete`
+- `mirror`
+- `public-safe`
+
+## 口令示例
+
+### 最短完全同步
+
+```text
+sync vault -> pub full keep-exclusive
+```
+
+含义：
+
+- 以 `vault` 为主维护仓
+- 完全同步到公开仓
+- 保留目标仓独有文件
+
+### 最短部分同步
+
+```text
+sync pub -> vault part path:templates/,skills/repo-sync/ exclude:CHANGELOG.md
+```
+
+### 按主题同步
+
+```text
+sync vault -> pub part topic:metadata,repo-sync exclude:private-ideas public-safe
+```
+
+### 显式镜像
+
+```text
+sync pub -> vault full mirror
+```
+
+这个口令表示你明确允许 destructive mirror。
+
 ## 推荐表达方式
 
 ### 完全同步
@@ -160,6 +242,7 @@
 - 如果用户没有明确指定主维护仓，不要假设存在永久默认主仓。
 - 如果目标是公开仓，宁可少同步，也不要把私密上下文直接推过去。
 - 对 `CHANGELOG.md` 这类记录型文件，应该追加与对齐信息，而不是机械复制另一边的历史。
+- 口令风格只是压缩表达，不是严格编程语言；只要语义清楚，agent 应尽量稳健解析。
 
 ## 相关条目
 

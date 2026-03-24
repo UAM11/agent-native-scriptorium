@@ -11,7 +11,7 @@ Use this skill to turn a natural-language dual-repo sync request into a safe, re
 
 1. Identify the primary repo, target repo, sync mode, include scope, exclude scope, and overwrite policy.
 2. Read `references/sync-model.md` for the default safety rules and the current file classification.
-3. Read `references/request-examples.md` if the request is phrased by topic, recent change, or loosely specified intent.
+3. Read `references/request-examples.md` if the request is phrased by topic, recent change, loosely specified intent, or shortcut command style.
 4. For full sync, sync the shared surface from the primary repo to the paired repo, then align paired files semantically instead of blindly overwriting repo-specific wording.
 5. For partial sync, sync only the requested paths, files, or the files implied by the requested topic or change set.
 6. Preserve target-only files by default. Delete or mirror only when the user explicitly says to do so.
