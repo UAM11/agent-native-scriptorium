@@ -58,3 +58,9 @@
 - 建立 `agent-native-scriptorium` 与 `agent-native-vault` 的双仓协作边界
 - 新增 `playbooks/repository/dual-repo-workflow.md`，明确内容路由与私仓晋升公仓流程
 - 在 `README.md`、`AGENTS.md`、`USER.md`、`PLAN.md` 中补充双仓职责与维护偏好
+
+### 元数据字段说明补充
+
+- 新增 `playbooks/repository/metadata-field-reference.md`，统一定义知识条目元数据字段
+- 在模板中加入 `Model` 与 `Harness` 的速记说明，减少后续维护时的概念混淆
+- 在 `AGENTS.md` 中加入元数据说明文档入口

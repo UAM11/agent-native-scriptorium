@@ -75,6 +75,12 @@
 
 如果某条记录使用了不同模型或不同 agent 形态，应显式覆盖默认值。
 
+字段定义与常见混淆说明见 `playbooks/repository/metadata-field-reference.md`。
+尤其注意：
+
+- `Model` 指底层模型本身，例如 `GPT-5.4`
+- `Harness` 指让模型以 agent 形态运行的那层系统，例如 `Codex`
+
 ## 维护流程
 
 1. 在新增内容前，先理解仓库现有结构。

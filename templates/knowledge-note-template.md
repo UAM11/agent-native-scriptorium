@@ -9,6 +9,11 @@
 - Harness: Codex
 - Source: where this note came from
 
+> Metadata quick notes:
+> `Model` = the underlying model itself.
+> `Harness` = the agent/runtime layer wrapped around the model.
+> Full definitions: `playbooks/repository/metadata-field-reference.md`
+
 ## 背景
 
 这份笔记是在什么情境下产生的？当时发生了什么？
