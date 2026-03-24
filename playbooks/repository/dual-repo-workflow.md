@@ -6,7 +6,7 @@
 - Status: verified
 - Tags: dual-repo, governance, privacy, routing
 - Model: GPT-5.4
-- Hardness: Codex
+- Harness: Codex
 - Source: established while setting up the public/private repository workflow
 
 ## 背景

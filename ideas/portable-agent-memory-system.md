@@ -6,7 +6,7 @@
 - Status: draft
 - Tags: memory, knowledge-base, agent, product, archive
 - Model: GPT-5.4
-- Hardness: Codex
+- Harness: Codex
 - Source: a discussion about preserving high-value outputs from OpenClaw-like agent interactions
 
 ## 背景
@@ -63,7 +63,7 @@
 
 ### 3. 缺少跨 agent 的迁移能力
 
-用户今天在某个 hardness 或某个模型里产出的好内容，明天往往难以被另一个 agent 延续使用。
+用户今天在某个 harness 或某个模型里产出的好内容，明天往往难以被另一个 agent 延续使用。
 
 ### 4. 记忆系统与知识库系统是断裂的
 

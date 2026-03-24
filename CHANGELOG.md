@@ -27,7 +27,7 @@
 
 - 新增 `CHANGELOG.md`，作为仓库变动日志
 - 新增 `USER.md`，用于记录用户个性化偏好
-- 在知识条目元数据中加入 `Model` 与 `Hardness`
+- 在知识条目元数据中加入 `Model` 与 `Harness`
 - 将 `AGENTS.md` 与 `USER.md` 的职责边界明确拆分
 - 为 `github-push-stable-setup` 增加对应的 `skill` 版本
 

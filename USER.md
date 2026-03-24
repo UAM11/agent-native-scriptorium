@@ -17,11 +17,11 @@
   - Status
   - Tags
   - Model
-  - Hardness
+  - Harness
   - Source
 - 当前默认值：
   - `Model: GPT-5.4`
-  - `Hardness: Codex`
+  - `Harness: Codex`
 
 ## 双仓偏好
 

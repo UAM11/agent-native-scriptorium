@@ -6,7 +6,7 @@
 - Status: draft | verified | needs-review
 - Tags: tag1, tag2, tag3
 - Model: GPT-5.4
-- Hardness: Codex
+- Harness: Codex
 - Source: where this note came from
 
 ## 背景

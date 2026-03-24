@@ -6,7 +6,7 @@
 - Status: verified
 - Tags: github, git, ssh, networking, windows
 - Model: GPT-5.4
-- Hardness: Codex
+- Harness: Codex
 - Source: verified from a real Windows debugging session
 
 ## 背景
