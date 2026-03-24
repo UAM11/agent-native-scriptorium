@@ -82,3 +82,11 @@
 - 为双仓同步补充最小句式：`sync <源> -> <目标> <mode> [scope] [exclude] [policy]`
 - 在 `repo-sync` playbook 与 skill references 中加入别名表、最短示例与口令解析说明
 - 在入口文档中补充短口令入口，降低实际使用门槛
+
+## 2026-03-24
+
+### 当前维护模式调整
+
+- 将当前工作模式调整为“公仓优先”
+- 默认只维护 `agent-native-scriptorium`
+- `agent-native-vault` 暂时冻结，只有在用户明确要求时才重新参与维护或同步
