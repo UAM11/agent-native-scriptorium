@@ -18,7 +18,7 @@
 ```md
 - Created: YYYY-MM-DD
 - Updated: YYYY-MM-DD
-- Type: playbook | solution | learning | prompt | skill | idea
+- Type: playbook | solution | learning | prompt | skill | idea | journal | review | track
 - Status: draft | verified | needs-review
 - Tags: tag1, tag2, tag3
 - Model: GPT-5.4
@@ -41,7 +41,7 @@
 ### Type
 
 - 这条记录属于哪一类知识条目
-- 当前推荐值：`playbook`、`solution`、`learning`、`prompt`、`skill`、`idea`
+- 当前推荐值：`playbook`、`solution`、`learning`、`prompt`、`skill`、`idea`、`journal`、`review`、`track`
 
 ### Status
 
@@ -72,6 +72,23 @@
 - 记录这条知识从哪里来
 - 通常用一句话说明来源场景即可
 
+## 新增类型建议
+
+### journal
+
+- 用于日常 session 记录、daily log、weekly log 等过程层内容
+- 重点是保留真实推进、阻塞点与下一步
+
+### review
+
+- 用于周度、月度或阶段性复盘
+- 重点是总结、回看、评估与下一阶段规划
+
+### track
+
+- 用于一条长期主线、mission 或 workstream 的入口页
+- 重点是定义范围、当前焦点、进入方式和产出方向
+
 ## Model 与 Harness 的区别
 
 - `Model` 更像大脑，负责理解、推理、生成
@@ -101,3 +118,4 @@
 - 如果一条记录明显依赖具体环境，除了元数据外，还应在正文写清验证条件
 - 如果后续引入新的模型或新的 agent runtime，直接覆盖默认值即可
 - 如果未来需要更强的可追踪性，可以再扩展字段，但应优先保持当前核心字段稳定
+- 公仓中的 `journal`、`review` 与 `track` 记录默认应保持 public-safe，避免写入敏感求职或隐私细节

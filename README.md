@@ -4,10 +4,12 @@ English | [简体中文](README.zh-CN.md)
 
 > A delirious scriptorium where agents, bugs, midnight questions, and stray sparks are fermented into strange manuals for learning, making, and surviving the future.
 
-`agent-native-scriptorium` is the public shelf of a dual-repository system for agent-born solutions, distilled study notes, reusable playbooks, and practical learning artifacts. The goal is simple: when a useful answer appears once, we do not let it vanish into chat history. When that answer is still sensitive, unfinished, or too personal to share, it should stay in the private vault until it is ready to be promoted.
+`agent-native-scriptorium` is the public, Git-first half of an agent-native external brain and growth operating system. It combines a journal layer, mission-oriented track workspaces, reusable knowledge assets, and lightweight metrics so that long-term learning and job-hunt work do not disappear into chat history. When a piece of work is still private, unfinished, or not safe to publish, it should stay out of this public repo until it has been sanitized or promoted intentionally.
 
 ## What Belongs Here
 
+- Public-safe daily and weekly journals of meaningful work
+- Mission-oriented track notes for learning, projects, interviews, and job-hunt preparation
 - Shareable technical incidents and verified fixes that are worth preserving
 - Study notes refined from agent-assisted learning sessions
 - Reusable workflows, prompts, skills, and operational playbooks
@@ -24,8 +26,12 @@ English | [简体中文](README.zh-CN.md)
 
 ## Repository Shape
 
+- `journal/`: public-safe daily and weekly progress logs
+- `tracks/`: mission-oriented workspaces for ongoing lines of effort
 - `playbooks/`: operational guides and step-by-step fixes
 - `playbooks/repository/`: repository governance and cross-repo workflows
+- `reviews/`: periodic reviews that summarize progress across logs and tracks
+- `metrics/`: lightweight derived snapshots and dashboards
 - `skills/`: agent-oriented operational packaging for reusable procedures
 - `ideas/`: incubating ideas across product, research, life, work, entrepreneurship, and everyday imagination
 - `solutions/`: concrete problem/solution writeups
@@ -37,6 +43,10 @@ English | [简体中文](README.zh-CN.md)
 
 ## Current Holdings
 
+- [Growth Loop Workflow](playbooks/repository/growth-loop-workflow.md): the lightweight operating model for capture, promotion, review, and metrics
+- [Job Hunt 2026 Track](tracks/job-hunt-2026/README.md): the active mission workspace for RL, agents, resume, interviews, projects, and applications
+- [Daily Journal Template](templates/daily-journal-template.md): the public-safe daily session template
+- [Weekly Review Template](templates/weekly-review-template.md): the roll-up template for weekly reflection and progress checks
 - [GitHub Push Stable Setup](playbooks/github/github-push-stable-setup.md): a verified fix for unstable GitHub `HTTPS` pushes by routing Git traffic through `SSH over 443`
 - [GitHub Push Stable Setup Skill](skills/github-push-stable-setup/SKILL.md): the same procedure packaged in a more agent-executable form
 - [Portable Agent Memory System](ideas/portable-agent-memory-system.md): an incubating idea for turning high-value chat outputs into portable, iterable knowledge assets
@@ -48,17 +58,23 @@ English | [简体中文](README.zh-CN.md)
 
 - Prefer preservation over reinvention
 - Prefer additive updates over broad rewrites
+- Prefer lightweight structure over deep placeholder-heavy trees
+- Capture progress first, then promote only what deserves long-term status
 - Keep notes reusable by a future self and by future agents
 - Separate raw context from distilled conclusions
 - Record dates and verification details whenever advice is environment-sensitive
+- Treat token usage as a secondary signal, not the main score
+- Keep public journaling public-safe; anonymize sensitive job-hunt details
 
 ## How Humans And Agents Should Contribute
 
-1. Capture the useful thing while it is still fresh.
-2. Distill it into a reusable note instead of a conversation fragment.
-3. File it into the best-matching folder.
-4. Keep filenames stable, descriptive, and machine-friendly.
-5. When adding a high-value artifact, update `README.md` and `README.zh-CN.md` so the archive remains legible at a glance.
+1. Capture the session in `journal/` while it is still fresh.
+2. Anchor it to the right mission or track in `tracks/`.
+3. Promote durable value into `learning/`, `solutions/`, `playbooks/`, or `skills/`.
+4. Roll up the week in `journal/weekly/` and periodically summarize in `reviews/`.
+5. Record lightweight derived metrics in `metrics/` when they help decision-making.
+6. Keep filenames stable, descriptive, and machine-friendly.
+7. When adding a high-value entry point, update `README.md` and `README.zh-CN.md` so the archive remains legible at a glance.
 
 ## Operating Rules For Agents
 

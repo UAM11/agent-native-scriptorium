@@ -42,16 +42,22 @@
 
 - 除非有明确理由，否则不要随意重构已有资料。
 - 优先做增量修改，而不是大面积推倒重写。
+- 优先保持结构轻量；只有在某类内容确实反复出现时，再增加更深层的目录。
 - 只要历史上下文仍然有解释价值，就不要轻易删除。
 - 新建文件时，文件名默认使用小写 kebab-case。
 - 默认使用 Markdown，除非有更合适的格式。
 - 严禁提交密钥、令牌、凭证、cookie、私密个人数据或其他敏感信息。
+- 公仓中的日志、求职轨迹、面试复盘与投递记录必须默认 public-safe；公司名、人名、联系方式和敏感细节应尽量匿名化。
 - 每次有实质性变更时，更新 `CHANGELOG.md`。
 - 如果根目录同时维护 `README.md` 与 `README.zh-CN.md`，修改仓库定位、结构或入口说明时，应尽量同步两者的核心信息。
 
 ## 目录意图
 
+- `journal/`：按天或按周记录真实推进，用来承接日常过程层
+- `tracks/`：围绕长期主线组织工作区，用来承接 mission 和 workstream
 - `playbooks/`：可执行的操作指南与经验证的排障流程
+- `reviews/`：周期性复盘与阶段总结
+- `metrics/`：由 journal、track 和 review 派生出的轻量指标
 - `skills/`：面向 agent 复用的操作封装
 - `ideas/`：待孵化的想法目录，可包含产品、科研、生活、创业、工作和日常灵感
 - `solutions/`：具体问题、推理过程与最终解决方案
@@ -76,7 +82,7 @@
 ```md
 - Created: YYYY-MM-DD
 - Updated: YYYY-MM-DD
-- Type: playbook | solution | learning | prompt | skill | idea
+- Type: playbook | solution | learning | prompt | skill | idea | journal | review | track
 - Status: draft | verified | needs-review
 - Tags: tag1, tag2, tag3
 - Model: GPT-5.4
@@ -92,14 +98,27 @@
 - `Model` 指底层模型本身，例如 `GPT-5.4`
 - `Harness` 指让模型以 agent 形态运行的那层系统，例如 `Codex`
 
+## 成长闭环工作流
+
+本仓库当前默认采用一套轻量的成长闭环：
+
+1. 在 `journal/` 中记录真实工作或学习 session
+2. 在 `tracks/` 中组织长期主线与当前关注点
+3. 把值得长期保留的内容晋升到 `learning/`、`solutions/`、`playbooks/` 或 `skills/`
+4. 在 `journal/weekly/` 和 `reviews/` 中做周期性复盘
+5. 只在有用时，把结果提炼成 `metrics/` 中的轻量指标
+
+具体工作流见 `playbooks/repository/growth-loop-workflow.md`。
+
 ## 维护流程
 
 1. 在新增内容前，先理解仓库现有结构。
-2. 把新材料放入最合适的目录。
-3. 从零开始写时，优先复用 `templates/knowledge-note-template.md`。
-4. 如果新增内容是高价值入口，记得同步更新 `README.md`。
-5. 如果新增内容是重复可执行流程，评估它是否应从 `playbooks/` 提升到 `skills/`。
-6. 如果一份新笔记取代了旧笔记，优先通过链接建立承接关系，而不是悄悄抹去历史。
+2. 如果内容属于当天或当次 session，优先先记进 `journal/`。
+3. 把新材料放入最合适的目录，并尽量与某个 `track` 建立关联。
+4. 从零开始写时，优先复用 `templates/` 里的对应模板。
+5. 如果新增内容是高价值入口，记得同步更新 `README.md` 与 `README.zh-CN.md`。
+6. 如果新增内容是重复可执行流程，评估它是否应从 `playbooks/` 提升到 `skills/`。
+7. 如果一份新笔记取代了旧笔记，优先通过链接建立承接关系，而不是悄悄抹去历史。
 
 ## playbook 与 skill 的区分
 

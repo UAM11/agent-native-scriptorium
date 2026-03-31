@@ -100,3 +100,14 @@
 
 - 在 `AGENTS.md` 中补充 changelog 维护纪律：更新前先核对 `git log --oneline --date=short`
 - 在同步工作流中补充 `CHANGELOG.md` 的日期校验注意事项，避免再按会话顺序误分日期
+
+## 2026-03-31
+
+### Growth OS V1 骨架
+
+- 将项目定位进一步明确为一个 Git-first 的 agent-native 个人成长操作系统
+- 新增 `journal/`、`tracks/`、`reviews/`、`metrics/` 四层骨架
+- 新增 `playbooks/repository/growth-loop-workflow.md`，明确“日志 -> track -> 资产 -> 复盘 -> 指标”的最小闭环
+- 为 `daily journal`、`weekly review`、`monthly review` 与 `track` 新增专用模板
+- 落地 `tracks/job-hunt-2026/` 主线，并为 `rl`、`agents`、`resume`、`interviews`、`projects`、`applications` 建立轻量入口
+- 在根 `README`、`README.zh-CN`、`AGENTS.md`、`USER.md`、`PLAN.md` 中同步更新新定位与维护约定
