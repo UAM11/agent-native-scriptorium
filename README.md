@@ -26,6 +26,8 @@ English | [简体中文](README.zh-CN.md)
 
 ## Repository Shape
 
+- `AGENT_INDEX.md`: the fastest onboarding index for a new agent entering the repo
+- `NOW.md`: a lightweight current-state snapshot for cross-thread and cross-harness continuity
 - `journal/`: public-safe daily and weekly progress logs
 - `tracks/`: mission-oriented workspaces for ongoing lines of effort
 - `playbooks/`: operational guides and step-by-step fixes
@@ -43,8 +45,11 @@ English | [简体中文](README.zh-CN.md)
 
 ## Current Holdings
 
+- [Agent Index](AGENT_INDEX.md): the shortest agent-facing entry point for understanding the repo, current mode, and default workflow
+- [Now](NOW.md): the current-state snapshot for the active mission, priorities, and guardrails
 - [Growth Loop Workflow](playbooks/repository/growth-loop-workflow.md): the lightweight operating model for capture, promotion, review, and metrics
 - [Job Hunt 2026 Track](tracks/job-hunt-2026/README.md): the active mission workspace for RL, agents, resume, interviews, projects, and applications
+- [New Agent Bootstrap Prompt](prompts/new-agent-bootstrap.md): a reusable prompt for bringing a new thread or harness up to speed before it starts editing
 - [Daily Journal Template](templates/daily-journal-template.md): the public-safe daily session template
 - [Weekly Review Template](templates/weekly-review-template.md): the roll-up template for weekly reflection and progress checks
 - [GitHub Push Stable Setup](playbooks/github/github-push-stable-setup.md): a verified fix for unstable GitHub `HTTPS` pushes by routing Git traffic through `SSH over 443`
@@ -78,6 +83,7 @@ English | [简体中文](README.zh-CN.md)
 
 ## Operating Rules For Agents
 
+- Start from [Agent Index](AGENT_INDEX.md) when a new agent or harness enters the repo.
 - See [AGENTS.md](AGENTS.md) for repository-wide operating rules that apply to any agent.
 - See [USER.md](USER.md) for user-specific preferences, defaults, and maintenance style choices.
 - Update [CHANGELOG.md](CHANGELOG.md) whenever you make a meaningful repository change.

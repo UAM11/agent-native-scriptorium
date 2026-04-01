@@ -15,6 +15,19 @@
 2. `USER.md`
 3. `AGENTS.md`
 
+## Agent 启动顺序
+
+- 新 agent 或新 harness 进入仓库时，默认先从 `AGENT_INDEX.md` 开始
+- 推荐阅读顺序：
+  1. `AGENT_INDEX.md`
+  2. `USER.md`
+  3. `AGENTS.md`
+  4. `NOW.md`
+  5. `playbooks/repository/growth-loop-workflow.md`
+  6. 当前 mission 对应的 `tracks/.../README.md`
+- 在真正开始编辑前，先用几条短句总结自己对仓库定位、当前模式、active mission 与关键护栏的理解
+- `NOW.md` 负责承接“当前此刻最重要的状态”，而不是长期规则；当默认模式、active mission 或阶段优先级发生明显变化时，应同步更新它
+
 ## 仓库使命
 
 保存由 agent 参与产生的高价值成果，让它们对未来的人类读者和未来的 agent 都仍然可理解、可复用、可继续扩展。

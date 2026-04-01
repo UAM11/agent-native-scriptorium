@@ -23,7 +23,7 @@
 - [x] 增加 `journal/`、`tracks/`、`reviews/`、`metrics/` 的轻量骨架
 - [x] 增加 daily / weekly / track 模板
 - [x] 建立 `job-hunt-2026` 主线工作区
-- [ ] 当内容增多后补一个轻量级索引或目录
+- [x] 为新 agent 增加最小 onboarding 入口：`AGENT_INDEX.md`、`NOW.md` 与 bootstrap prompt
 - [ ] 建立按主题和状态打标签的简单规范
 - [ ] 明确什么内容应该放进 `playbooks/`、`solutions/`、`learning/`
 - [ ] 明确什么内容应该进一步升级为 `skill`
@@ -45,6 +45,7 @@
 - [x] 将通用规则与用户偏好拆分为 `AGENTS.md` 和 `USER.md`
 - [x] 建立 public/private 双仓结构与内容路由规则
 - [x] 建立由用户指定主维护仓的双仓同步工作流
+- [x] 建立跨线程 / 跨 harness 的新 agent 自举入口
 - [ ] 如果并行维护增多，补充 changelog 或 session log 规范
 - [ ] 对涉及金钱、安全、凭证、生产环境的笔记增加更严格的审查规则
 
@@ -59,6 +60,7 @@
 
 ## 近期优先补充
 
+- 第一轮真实使用后的 `NOW.md` 更新节奏
 - 第一篇真实的 `journal/daily/` 条目
 - 第一篇真实的 `journal/weekly/` 条目
 - 第一份 `metrics/snapshots/` 周度快照

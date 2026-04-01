@@ -26,6 +26,8 @@
 
 ## 仓库结构
 
+- `AGENT_INDEX.md`：给新 agent 的最短上手索引
+- `NOW.md`：给新线程或新 harness 的当前状态快照
 - `journal/`：公开安全的日常日志与周度记录
 - `tracks/`：围绕长期主线组织的工作区
 - `playbooks/`：操作指南、排障流程与经验证的方法
@@ -43,8 +45,11 @@
 
 ## 当前馆藏
 
+- [Agent Index](AGENT_INDEX.md)：给新 agent 的最短入口，帮助它先建立工作模型再开始编辑
+- [NOW](NOW.md)：当前 mission、优先级与护栏的轻量状态快照
 - [成长闭环工作流](playbooks/repository/growth-loop-workflow.md)：把日志、track、资产、复盘与指标串起来的最小工作模型
 - [Job Hunt 2026 主线](tracks/job-hunt-2026/README.md)：当前围绕 RL、agents、简历、面试、项目与投递展开的主工作区
+- [新 Agent 启动 Prompt](prompts/new-agent-bootstrap.md)：在新的线程或 harness 中快速完成仓库自举的复用提示词
 - [Daily Journal Template](templates/daily-journal-template.md)：公开安全的日常日志模板
 - [Weekly Review Template](templates/weekly-review-template.md)：周度复盘模板
 - [GitHub Push 稳定方案](playbooks/github/github-push-stable-setup.md)：一个已经验证可用的 GitHub 推送修复方案
@@ -85,6 +90,7 @@ sync vault -> pub full keep-exclusive
 
 ## 给 Agent 的说明
 
+- 新 agent 进入仓库时，优先先看 `AGENT_INDEX.md`
 - 通用协作规则见 `AGENTS.md`
 - 用户偏好与默认值见 `USER.md`
 - 每次有实质性改动时，更新 `CHANGELOG.md`

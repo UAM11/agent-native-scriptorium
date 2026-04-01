@@ -24,6 +24,8 @@
 - 当前默认值：
   - `Model: GPT-5.4`
   - `Harness: Codex`
+- 当切换到新的线程、新的 harness 或新的 agent 时，希望优先通过 `AGENT_INDEX.md`、`NOW.md` 与 `prompts/new-agent-bootstrap.md` 完成自举
+- 希望新 agent 在动手编辑前，先简短总结它对仓库定位、当前模式和关键规则的理解
 
 ## 双仓偏好
 
