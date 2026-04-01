@@ -27,7 +27,7 @@
 - [ ] 建立按主题和状态打标签的简单规范
 - [ ] 明确什么内容应该放进 `playbooks/`、`solutions/`、`learning/`
 - [ ] 明确什么内容应该进一步升级为 `skill`
-- [ ] 增加第一篇真实的 `journal/daily/` 日志
+- [x] 增加第一篇真实的 `journal/daily/` 日志
 - [ ] 增加第一篇真实的 `journal/weekly/` 复盘
 
 ## 第三阶段：检索与复用

@@ -120,3 +120,8 @@
 - 新增 `NOW.md`，承接当前维护模式、active mission、优先级与默认写入路径
 - 新增 `prompts/new-agent-bootstrap.md`，用于在新线程或新 harness 中快速完成仓库自举
 - 在 `README.md`、`README.zh-CN.md`、`AGENTS.md`、`USER.md`、`PLAN.md` 与 `prompts/README.md` 中补充对应入口与维护约定
+
+### 第一篇真实 Daily Journal
+
+- 新增 `journal/daily/2026-04-01.md`，记录仓库 onboarding 落地、`nanobot` 第一轮架构学习与简历修正
+- 将 `PLAN.md` 中“第一篇真实的 daily journal”标记为已完成
