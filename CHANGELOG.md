@@ -125,3 +125,9 @@
 
 - 新增 `journal/daily/2026-04-01.md`，记录仓库 onboarding 落地、`nanobot` 第一轮架构学习与简历修正
 - 将 `PLAN.md` 中“第一篇真实的 daily journal”标记为已完成
+
+## 2026-04-02
+
+### Claw 组织实验 Idea
+
+- 新增 `ideas/claw-organization-experiments.md`，记录关于“自给自足 claw / 科研团队 claw / 公司 claw”的三类长期实验设想
