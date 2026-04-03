@@ -141,3 +141,7 @@
 ### 高收入用户切入口 Idea
 
 - 新增 `ideas/premium-user-wedge.md`，记录“先挣有钱人的零花钱”这类偏商业化的用户切入思路
+
+### 未来科研方向 Idea
+
+- 新增 `ideas/future-research-directions.md`，记录 Agentic RL、数据飞轮、安全与隐私、推理加速与压缩、自进化等后续重点科研方向
