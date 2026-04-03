@@ -131,3 +131,9 @@
 ### Claw 组织实验 Idea
 
 - 新增 `ideas/claw-organization-experiments.md`，记录关于“自给自足 claw / 科研团队 claw / 公司 claw”的三类长期实验设想
+
+## 2026-04-03
+
+### 句子与片段入口
+
+- 新增 `ideas/quotes-and-fragments.md`，用于收纳值得保留的句子、片段与生活灵感
