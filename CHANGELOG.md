@@ -137,3 +137,7 @@
 ### 句子与片段入口
 
 - 新增 `ideas/quotes-and-fragments.md`，用于收纳值得保留的句子、片段与生活灵感
+
+### 高收入用户切入口 Idea
+
+- 新增 `ideas/premium-user-wedge.md`，记录“先挣有钱人的零花钱”这类偏商业化的用户切入思路
