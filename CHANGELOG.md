@@ -158,3 +158,5 @@
 
 - 新增 `templates/learning-note-template.md`，用于承载更偏教程式、强调逻辑承接与分层解释的学习笔记
 - 在 `templates/knowledge-note-template.md` 与 `learning/README.md` 中补充该模板入口
+- 新增 `templates/README.md`，明确 `knowledge-note-template` 与 `learning-note-template` 的区别及模板选择规则
+- 在 `AGENTS.md` 中补充模板选择规则，帮助新 agent 自动判断该调用哪个模板

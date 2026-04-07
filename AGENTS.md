@@ -133,6 +133,18 @@
 6. 如果新增内容是重复可执行流程，评估它是否应从 `playbooks/` 提升到 `skills/`。
 7. 如果一份新笔记取代了旧笔记，优先通过链接建立承接关系，而不是悄悄抹去历史。
 
+## 模板选择规则
+
+- 默认先按条目类型选模板，而不是先按个人感觉选模板。
+- `journal`、`review`、`track` 这类固定结构条目，优先用对应专用模板。
+- 如果条目类型是 `learning`，默认优先使用 `templates/learning-note-template.md`。
+- 如果条目更偏“记录一个知识条目、方案、结论、流程”，默认使用 `templates/knowledge-note-template.md`。
+- 如果条目更偏“从头讲清概念、建立总地图、分层解释并辅以示例”，优先使用 `templates/learning-note-template.md`。
+- 如果 agent 拿不准，先判断目标更接近“帮助理解”还是“沉淀结论”：
+  - 更像帮助理解：用 `learning-note-template.md`
+  - 更像沉淀结论：用 `knowledge-note-template.md`
+- 具体模板说明与决策表见 `templates/README.md`。
+
 ## playbook 与 skill 的区分
 
 - `playbook` 更偏“给人看”，强调背景、解释、过程和可读性
