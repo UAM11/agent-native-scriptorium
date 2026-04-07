@@ -152,3 +152,4 @@
 
 - 新增 `learning/llm-streaming-and-langgraph-streaming.md`，整理 `prefill / decode / KV cache / SSE` 及 LangGraph `messages / updates / custom` 流机制
 - 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该学习笔记入口
+- 重写该笔记的开头结构，用“模型层 / 传输层 / 框架层”的三层教程式引导来提升可读性
