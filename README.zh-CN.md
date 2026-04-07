@@ -52,6 +52,7 @@
 - [新 Agent 启动 Prompt](prompts/new-agent-bootstrap.md)：在新的线程或 harness 中快速完成仓库自举的复用提示词
 - [Daily Journal Template](templates/daily-journal-template.md)：公开安全的日常日志模板
 - [Weekly Review Template](templates/weekly-review-template.md)：周度复盘模板
+- [LLM 流式输出与 LangGraph 流机制](learning/llm-streaming-and-langgraph-streaming.md)：从 `prefill / decode / KV cache / SSE` 到 LangGraph `messages / updates / custom` 的一份学习笔记
 - [GitHub Push 稳定方案](playbooks/github/github-push-stable-setup.md)：一个已经验证可用的 GitHub 推送修复方案
 - [GitHub Push Stable Setup Skill](skills/github-push-stable-setup/SKILL.md)：同一方案的 agent 可执行封装
 - [可迁移的 Agent 记忆系统](ideas/portable-agent-memory-system.md)：关于“把高价值对话沉淀成长期资产”的想法条目

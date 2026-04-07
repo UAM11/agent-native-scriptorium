@@ -145,3 +145,10 @@
 ### 未来科研方向 Idea
 
 - 新增 `ideas/future-research-directions.md`，记录 Agentic RL、数据飞轮、安全与隐私、推理加速与压缩、自进化等后续重点科研方向
+
+## 2026-04-07
+
+### 流式输出学习笔记
+
+- 新增 `learning/llm-streaming-and-langgraph-streaming.md`，整理 `prefill / decode / KV cache / SSE` 及 LangGraph `messages / updates / custom` 流机制
+- 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该学习笔记入口
