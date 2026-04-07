@@ -160,3 +160,9 @@
 - 在 `templates/knowledge-note-template.md` 与 `learning/README.md` 中补充该模板入口
 - 新增 `templates/README.md`，明确 `knowledge-note-template` 与 `learning-note-template` 的区别及模板选择规则
 - 在 `AGENTS.md` 中补充模板选择规则，帮助新 agent 自动判断该调用哪个模板
+
+### Daily Journal 回填
+
+- 补写 `journal/daily/2026-04-02.md`，记录 OpenClaw 组织实验 idea 的形成与“经济效益”表述修正
+- 补写 `journal/daily/2026-04-03.md`，记录句子片段入口、商业化切入口与未来科研方向的集中沉淀
+- 新增 `journal/daily/2026-04-07.md`，记录流式输出学习、LangGraph streaming 笔记与 `nanobot` 学习路线重定向
