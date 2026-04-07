@@ -14,6 +14,10 @@
 > `Harness` = the agent/runtime layer wrapped around the model.
 > Full definitions: `playbooks/repository/metadata-field-reference.md`
 
+> Template note:
+> If `Type: learning`, prefer `templates/learning-note-template.md`.
+> The learning template is more tutorial-oriented and is better for layered explanations.
+
 ## 背景
 
 这份笔记是在什么情境下产生的？当时发生了什么？

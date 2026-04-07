@@ -7,3 +7,7 @@
 当前入口：
 
 - `llm-streaming-and-langgraph-streaming.md`：从 `prefill / decode / KV cache / SSE` 到 LangGraph `messages / updates / custom` 的一份流式输出学习笔记
+
+推荐模板：
+
+- `templates/learning-note-template.md`：适合写教程感更强、层次更分明、重视逻辑承接的学习笔记
