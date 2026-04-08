@@ -7,6 +7,7 @@
 当前入口：
 
 - `llm-streaming-and-langgraph-streaming.md`：从 `prefill / decode / KV cache / SSE` 到 LangGraph `messages / updates / custom` 的一份流式输出学习笔记
+- `nanobot-agent-control-center-analysis.md`：围绕主 agent / 中控 / 调度 / 队列 / 上下文管理拆解 `nanobot`，并外推到一个可执行的万能服务中控系统设计
 
 推荐模板：
 

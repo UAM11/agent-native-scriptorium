@@ -166,3 +166,12 @@
 - 补写 `journal/daily/2026-04-02.md`，记录 OpenClaw 组织实验 idea 的形成与“经济效益”表述修正
 - 补写 `journal/daily/2026-04-03.md`，记录句子片段入口、商业化切入口与未来科研方向的集中沉淀
 - 新增 `journal/daily/2026-04-07.md`，记录流式输出学习、LangGraph streaming 笔记与 `nanobot` 学习路线重定向
+
+## 2026-04-08
+
+### Nanobot 中控系统学习笔记
+
+- 新增 `learning/nanobot-agent-control-center-analysis.md`，系统拆解 `nanobot` 中与主 agent / 中控 / 调度 / 队列 / 上下文管理最相关的核心代码
+- 在笔记中分别梳理每个部分的抽象设计逻辑、关键源码路径、值得学习之处与需要加强之处
+- 基于 `nanobot`、Claude Code、OpenClaw 与 OpenAI harness engineering 的思路，外推出一版适用于“万能服务中控系统”的可执行设计方案
+- 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该笔记入口
