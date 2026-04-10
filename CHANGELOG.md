@@ -176,6 +176,8 @@
 - 基于 `nanobot`、Claude Code、OpenClaw 与 OpenAI harness engineering 的思路，外推出一版适用于“万能服务中控系统”的可执行设计方案
 - 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该笔记入口
 
+## 2026-04-10
+
 ### 数据飞轮与 Agentic RL 学习笔记
 
 - 新增 `learning/data-flywheel-agentic-rl-and-vertical-ai-agents.md`，系统整理数据飞轮、eval 飞轮、`RFT` 与 Agentic RL 的关系，并结合 TikTok、Google Maps、Tesla、OpenAI、Anthropic、GitHub、Harvey、Graphite 的官方案例建立整体框架
