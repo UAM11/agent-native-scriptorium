@@ -175,3 +175,11 @@
 - 在笔记中分别梳理每个部分的抽象设计逻辑、关键源码路径、值得学习之处与需要加强之处
 - 基于 `nanobot`、Claude Code、OpenClaw 与 OpenAI harness engineering 的思路，外推出一版适用于“万能服务中控系统”的可执行设计方案
 - 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该笔记入口
+
+### 数据飞轮与 Agentic RL 学习笔记
+
+- 新增 `learning/data-flywheel-agentic-rl-and-vertical-ai-agents.md`，系统整理数据飞轮、eval 飞轮、`RFT` 与 Agentic RL 的关系，并结合 TikTok、Google Maps、Tesla、OpenAI、Anthropic、GitHub、Harvey、Graphite 的官方案例建立整体框架
+- 在笔记中补充客服 / 法务 / coding agent 三类垂直场景的闭环设计思路，包括建议记录的数据对象、eval 维度、reward 理解方式与迭代顺序
+- 新增 `journal/daily/2026-04-10.md`，记录本次围绕数据飞轮与 Agentic RL 的学习与沉淀过程
+- 在 `ideas/future-research-directions.md` 中把“Agentic RL 与数据飞轮”的方向和新学习笔记建立承接关系
+- 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该学习笔记入口

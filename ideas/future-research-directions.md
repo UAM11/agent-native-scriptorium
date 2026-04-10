@@ -1,7 +1,7 @@
 # 未来科研方向
 
 - Created: 2026-04-03
-- Updated: 2026-04-03
+- Updated: 2026-04-10
 - Type: idea
 - Status: draft
 - Tags: research, llm, agents, rl, safety, inference, self-evolution
@@ -25,6 +25,10 @@
 - 怎样把在线运行、离线训练、评测和策略更新接起来
 
 这条线更偏向“agent 如何越跑越强”。
+
+相关展开：
+
+- 已沉淀为学习笔记：[从数据飞轮到 Agentic RL：垂直 AI Agent 的持续改进闭环](../learning/data-flywheel-agentic-rl-and-vertical-ai-agents.md)
 
 ## 方向 2：大模型安全与隐私保护
 
@@ -87,3 +91,7 @@
 - 这四条线里，哪一条最适合先切入
 - 每条线更偏理论、实验，还是更偏工程系统
 - 哪些方向适合作为论文主线，哪些更适合作为系统或项目主线
+
+## 相关笔记
+
+- [从数据飞轮到 Agentic RL：垂直 AI Agent 的持续改进闭环](../learning/data-flywheel-agentic-rl-and-vertical-ai-agents.md)

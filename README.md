@@ -54,6 +54,7 @@ English | [简体中文](README.zh-CN.md)
 - [Weekly Review Template](templates/weekly-review-template.md): the roll-up template for weekly reflection and progress checks
 - [LLM Streaming and LangGraph Streaming](learning/llm-streaming-and-langgraph-streaming.md): a learning note on `prefill`, `decode`, `KV cache`, `SSE`, and LangGraph `messages / updates / custom` streaming
 - [Nanobot Agent Control Center Analysis](learning/nanobot-agent-control-center-analysis.md): a structured reading of `nanobot`'s main agent, control center, scheduling, queueing, and context management, with a concrete design proposal for a stronger service-control system
+- [Data Flywheels, Agentic RL, and Vertical AI Agents](learning/data-flywheel-agentic-rl-and-vertical-ai-agents.md): a learning note on what data flywheels really are, how they differ from raw data accumulation, where `RFT` and agentic RL fit, and how support, legal, and coding agents can build compounding improvement loops
 - [GitHub Push Stable Setup](playbooks/github/github-push-stable-setup.md): a verified fix for unstable GitHub `HTTPS` pushes by routing Git traffic through `SSH over 443`
 - [GitHub Push Stable Setup Skill](skills/github-push-stable-setup/SKILL.md): the same procedure packaged in a more agent-executable form
 - [Portable Agent Memory System](ideas/portable-agent-memory-system.md): an incubating idea for turning high-value chat outputs into portable, iterable knowledge assets

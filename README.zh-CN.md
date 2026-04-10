@@ -54,6 +54,7 @@
 - [Weekly Review Template](templates/weekly-review-template.md)：周度复盘模板
 - [LLM 流式输出与 LangGraph 流机制](learning/llm-streaming-and-langgraph-streaming.md)：从 `prefill / decode / KV cache / SSE` 到 LangGraph `messages / updates / custom` 的一份学习笔记
 - [Nanobot 主 Agent 与中控系统拆解](learning/nanobot-agent-control-center-analysis.md)：围绕主 agent / 中控 / 调度 / 队列 / 上下文管理系统拆解 `nanobot`，并外推到一个更强的万能服务中控系统设计
+- [从数据飞轮到 Agentic RL：垂直 AI Agent 的持续改进闭环](learning/data-flywheel-agentic-rl-and-vertical-ai-agents.md)：系统梳理数据飞轮、eval 飞轮、`RFT` 与 Agentic RL 的关系，并把客服 / 法务 / coding agent 的实现路径放回真实案例里
 - [GitHub Push 稳定方案](playbooks/github/github-push-stable-setup.md)：一个已经验证可用的 GitHub 推送修复方案
 - [GitHub Push Stable Setup Skill](skills/github-push-stable-setup/SKILL.md)：同一方案的 agent 可执行封装
 - [可迁移的 Agent 记忆系统](ideas/portable-agent-memory-system.md)：关于“把高价值对话沉淀成长期资产”的想法条目
