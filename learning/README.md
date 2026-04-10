@@ -6,6 +6,7 @@
 
 当前入口：
 
+- `harness-engineering-primer-and-evolution-comparison.md`：一篇更轻量的入门笔记，用来快速区分 `Prompt Engineering`、`Context Engineering` 与 `Harness Engineering`
 - `llm-streaming-and-langgraph-streaming.md`：从 `prefill / decode / KV cache / SSE` 到 LangGraph `messages / updates / custom` 的一份流式输出学习笔记
 - `nanobot-agent-control-center-analysis.md`：围绕主 agent / 中控 / 调度 / 队列 / 上下文管理拆解 `nanobot`，并外推到一个可执行的万能服务中控系统设计
 - `data-flywheel-agentic-rl-and-vertical-ai-agents.md`：系统梳理数据飞轮、eval 飞轮、`RFT` 与 Agentic RL 的关系，并给出客服 / 法务 / coding agent 的具体闭环设计框架

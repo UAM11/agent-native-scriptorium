@@ -185,3 +185,9 @@
 - 新增 `journal/daily/2026-04-10.md`，记录本次围绕数据飞轮与 Agentic RL 的学习与沉淀过程
 - 在 `ideas/future-research-directions.md` 中把“Agentic RL 与数据飞轮”的方向和新学习笔记建立承接关系
 - 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该学习笔记入口
+
+### Harness Engineering 初探笔记
+
+- 新增 `learning/harness-engineering-primer-and-evolution-comparison.md`，基于用户提供的视频摘要与脑图，轻量整理 `Prompt Engineering`、`Context Engineering` 与 `Harness Engineering` 的演进关系与差异
+- 在笔记中压缩整理成熟 harness 的六层结构：上下文管理、工具系统、执行编排、记忆与状态、评估与观测、约束校验与失败恢复
+- 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该入门笔记入口

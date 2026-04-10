@@ -52,6 +52,7 @@
 - [新 Agent 启动 Prompt](prompts/new-agent-bootstrap.md)：在新的线程或 harness 中快速完成仓库自举的复用提示词
 - [Daily Journal Template](templates/daily-journal-template.md)：公开安全的日常日志模板
 - [Weekly Review Template](templates/weekly-review-template.md)：周度复盘模板
+- [Harness Engineering 初探与演进比较](learning/harness-engineering-primer-and-evolution-comparison.md)：一篇更轻量的入门笔记，用来快速区分 `Prompt Engineering`、`Context Engineering` 与 `Harness Engineering`
 - [LLM 流式输出与 LangGraph 流机制](learning/llm-streaming-and-langgraph-streaming.md)：从 `prefill / decode / KV cache / SSE` 到 LangGraph `messages / updates / custom` 的一份学习笔记
 - [Nanobot 主 Agent 与中控系统拆解](learning/nanobot-agent-control-center-analysis.md)：围绕主 agent / 中控 / 调度 / 队列 / 上下文管理系统拆解 `nanobot`，并外推到一个更强的万能服务中控系统设计
 - [从数据飞轮到 Agentic RL：垂直 AI Agent 的持续改进闭环](learning/data-flywheel-agentic-rl-and-vertical-ai-agents.md)：系统梳理数据飞轮、eval 飞轮、`RFT` 与 Agentic RL 的关系，并把客服 / 法务 / coding agent 的实现路径放回真实案例里

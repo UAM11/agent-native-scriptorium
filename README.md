@@ -52,6 +52,7 @@ English | [简体中文](README.zh-CN.md)
 - [New Agent Bootstrap Prompt](prompts/new-agent-bootstrap.md): a reusable prompt for bringing a new thread or harness up to speed before it starts editing
 - [Daily Journal Template](templates/daily-journal-template.md): the public-safe daily session template
 - [Weekly Review Template](templates/weekly-review-template.md): the roll-up template for weekly reflection and progress checks
+- [Harness Engineering Primer and Evolution Comparison](learning/harness-engineering-primer-and-evolution-comparison.md): a lightweight learning note that compares `Prompt Engineering`, `Context Engineering`, and `Harness Engineering`, and outlines the six-layer shape of a mature harness
 - [LLM Streaming and LangGraph Streaming](learning/llm-streaming-and-langgraph-streaming.md): a learning note on `prefill`, `decode`, `KV cache`, `SSE`, and LangGraph `messages / updates / custom` streaming
 - [Nanobot Agent Control Center Analysis](learning/nanobot-agent-control-center-analysis.md): a structured reading of `nanobot`'s main agent, control center, scheduling, queueing, and context management, with a concrete design proposal for a stronger service-control system
 - [Data Flywheels, Agentic RL, and Vertical AI Agents](learning/data-flywheel-agentic-rl-and-vertical-ai-agents.md): a learning note on what data flywheels really are, how they differ from raw data accumulation, where `RFT` and agentic RL fit, and how support, legal, and coding agents can build compounding improvement loops
