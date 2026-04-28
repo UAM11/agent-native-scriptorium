@@ -178,6 +178,12 @@
 
 ## 2026-04-10
 
+### 当前状态与入口同步
+
+- 更新 `NOW.md` 的快照日期、当前优先级、结构性里程碑与下一批优先内容，使其与现有 `journal/` 与 `learning/` 资产保持一致
+- 更新 `PLAN.md` 的“近期优先补充”，移除已完成项，聚焦 weekly review、metrics snapshot、求职向 solution/playbook 与交叉链接
+- 为 `prompts/new-agent-bootstrap.md` 补齐元数据块，使该 prompt 也遵循仓库的可追踪性约定
+
 ### 数据飞轮与 Agentic RL 学习笔记
 
 - 新增 `learning/data-flywheel-agentic-rl-and-vertical-ai-agents.md`，系统整理数据飞轮、eval 飞轮、`RFT` 与 Agentic RL 的关系，并结合 TikTok、Google Maps、Tesla、OpenAI、Anthropic、GitHub、Harvey、Graphite 的官方案例建立整体框架
@@ -189,5 +195,6 @@
 ### Harness Engineering 初探笔记
 
 - 新增 `learning/harness-engineering-primer-and-evolution-comparison.md`，基于用户提供的视频摘要与脑图，轻量整理 `Prompt Engineering`、`Context Engineering` 与 `Harness Engineering` 的演进关系与差异
+- 新增并优化 `learning/harness-engineering-primer-mindmap.svg`，调整脑图排版、卡片布局与中文显示可读性
 - 在笔记中压缩整理成熟 harness 的六层结构：上下文管理、工具系统、执行编排、记忆与状态、评估与观测、约束校验与失败恢复
 - 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该入门笔记入口
