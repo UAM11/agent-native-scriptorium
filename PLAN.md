@@ -60,9 +60,9 @@
 
 ## 近期优先补充
 
-- 第一轮真实使用后的 `NOW.md` 更新节奏
-- 第一篇真实的 `journal/daily/` 条目
 - 第一篇真实的 `journal/weekly/` 条目
 - 第一份 `metrics/snapshots/` 周度快照
-- 第一篇来自 agent 辅助学习过程的 `learning/` 笔记
 - 第一篇来自真实求职准备过程的 `solutions/` 或 `playbook`
+- 第一轮 `journal -> weekly -> metrics` 的真实闭环验证
+- 围绕现有 `journal/`、`tracks/`、`learning/` 建立第一批交叉链接
+- 建立 `NOW.md` 的持续同步节奏，避免状态入口滞后

@@ -1,3 +1,12 @@
+- Created: 2026-04-01
+- Updated: 2026-04-10
+- Type: prompt
+- Status: verified
+- Tags: agent, bootstrap, onboarding, prompt
+- Model: GPT-5.4
+- Harness: Codex
+- Source: created as the reusable bootstrap prompt for new threads, harnesses, and agents
+
 # 新 Agent 启动 Prompt
 
 这个 prompt 用于在新的线程、新的 harness，或新的 agent 接手这个仓库时，快速完成自举。

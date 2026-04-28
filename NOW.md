@@ -2,16 +2,16 @@
 
 这个文件记录“当前此刻最值得新 agent 立刻知道的状态”。
 
-- Snapshot Date: 2026-04-01
+- Snapshot Date: 2026-04-10
 - Default Workspace: `agent-native-scriptorium`
 - Repo Mode: public-only
 - Active Mission: `job-hunt-2026`
 
 ## 当前优先级
 
-- 让仓库逐步具备跨线程、跨 harness 的自举能力
-- 围绕 `job-hunt-2026` 建立稳定的日常记录与长期沉淀节奏
-- 保持结构轻量，让人和 agent 都能快速找到入口
+- 补齐 `journal/weekly/` 与 `metrics/snapshots/` 的第一批真实条目，让成长闭环真正跑起来
+- 围绕 `job-hunt-2026` 持续把学习推进和求职推进晋升为 `learning/`、`solutions/`、`playbooks/`
+- 保持入口文档与真实现状同步，让新 agent 不依赖隐性上下文也能快速接手
 
 ## 当前活跃主线
 
@@ -42,15 +42,18 @@
 - 建立了 `journal/`、`tracks/`、`reviews/`、`metrics/` 四层 Growth OS V1 骨架
 - 建立了 `job-hunt-2026` 主线与 6 条活跃 tracks
 - 建立了双语 README、双仓工作流和 repo-sync 协议
-- 当前补上了 agent onboarding 的最小入口层
+- 补上了 agent onboarding 的最小入口层与新 agent bootstrap prompt
+- 已形成 4 篇真实 `journal/daily/` 条目，开始有连续推进痕迹
+- 已沉淀 2 篇偏 agent / system design 的 `learning/` 资产
+- 已补齐学习笔记模板分流规则，能区分 `knowledge-note-template` 与 `learning-note-template`
 
 ## 下一批最值得推进的内容
 
-- 第一篇真实的 `journal/daily/` 条目
 - 第一篇真实的 `journal/weekly/` 条目
 - 第一份 `metrics/snapshots/` 周度快照
-- 第一篇来自真实学习推进的 `learning/` 资产
 - 第一篇来自真实求职推进的 `solution` 或 `playbook`
+- 围绕现有 `journal/`、`tracks/`、`learning/` 建立第一批交叉链接
+- 继续把 `agents` / `rl` 主线里的真实学习推进转成长期资产
 
 ## 何时更新这个文件
 
