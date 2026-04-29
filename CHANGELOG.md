@@ -207,6 +207,7 @@
 - 新增 `journal/daily/2026-04-29.md`，记录本次围绕 DeepSeek 技术演变与学习路径搭建的学习 session
 - 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该研究笔记入口
 - 在后续迭代中补充 `DeepSeek mHC` 节点，把连接结构演化明确写成 `Residual -> HC -> mHC -> V4`
+- 在后续迭代中补充第一阶段精读，展开 `DeepSeek LLM / V1` 中的 `scaling law`、超参数规律、数据质量影响与其如何自然导向 `V2`
 
 ### 维护偏好更新
 
