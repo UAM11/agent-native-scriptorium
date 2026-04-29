@@ -206,6 +206,7 @@
 - 新增 `learning/deepseek-v1-to-v4-research-route.md`，以官方论文和报告为主线，梳理 `DeepSeek LLM / V1` 到 `V4` 的研究路线，并拆成预训练、架构、后训练与系统工程四条主线
 - 新增 `journal/daily/2026-04-29.md`，记录本次围绕 DeepSeek 技术演变与学习路径搭建的学习 session
 - 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该研究笔记入口
+- 在后续迭代中补充 `DeepSeek mHC` 节点，把连接结构演化明确写成 `Residual -> HC -> mHC -> V4`
 
 ### 维护偏好更新
 

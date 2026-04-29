@@ -32,6 +32,7 @@
 1. 视频里说的 `V1`，更接近官方的早期基础模型阶段，也就是 **DeepSeek LLM**，重点是 `scaling law` 与基础预训练。
 2. `R1` 不是 `V4` 的一个附属章节，而是 **后训练范式** 的独立跃迁：它在问“推理能力能不能主要靠 RL 长出来”。
 3. `V3.2` 是连接 `V3/R1` 与 `V4` 的桥，尤其重要，但本笔记当前把它视为“需要下一轮精读”的过渡节点。
+4. 在 `V3.2` 和 `V4` 之间，还应该单独看到一个 **DeepSeek mHC** 节点。它代表的不是又一个普通缩写，而是 DeepSeek 对连接结构本身的一次系统性改造：从传统残差连接，走向 `HC`（Hyper-Connections），再走向 `mHC`（Manifold-Constrained Hyper-Connections）。
 
 所以更适合学习的路线不是单纯版本故事，而是：
 
@@ -52,6 +53,7 @@
 - `DeepSeekMoE + V2`：解决“怎么更便宜地把模型做大、把推理做快”
 - `V3`：解决“怎么把稀疏大模型稳定地训练到超大规模”
 - `R1`：解决“推理能力能不能主要靠 RL 训练出来”
+- `mHC`：解决“连接结构怎样在更强表达力下仍保持大规模训练稳定”
 - `V4`：解决“怎么把长上下文、稳定训练、specialist RL 和能力融合整合到同一代模型里”
 
 ## 一张总图
@@ -63,8 +65,9 @@ flowchart LR
     C --> D["DeepSeek-V3<br/>larger MoE + aux-loss-free load balancing + MTP"]
     D --> E["DeepSeek-R1<br/>pure RL reasoning line"]
     D --> F["DeepSeek-V3.2<br/>DSA + stronger RL + agentic task synthesis"]
-    E --> G["DeepSeek-V4<br/>CSA/HCA + mHC + specialist RL + GRM + OPD"]
-    F --> G
+    F --> H["DeepSeek mHC<br/>Residual -> HC -> mHC"]
+    E --> G["DeepSeek-V4<br/>CSA/HCA + specialist RL + GRM + OPD"]
+    H --> G
 ```
 
 ## 版本对照表
@@ -77,6 +80,7 @@ flowchart LR
 | DeepSeek-V3 | [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437), 2024-12-27 | 让超大 MoE 模型在真实工程中稳定、便宜地训练出来 | `MLA`、`DeepSeekMoE`、aux-loss-free load balancing、`MTP`、 FP8 Training | 真正把“超大稀疏模型训练系统”跑通 |
 | DeepSeek-R1 | [DeepSeek-R1](https://arxiv.org/abs/2501.12948), 2025-01-22 | 让 reasoning 不只靠 SFT，而是靠 RL 真正长出来 | `R1-Zero`、pure RL、multi-stage RL、cold-start data | 推理能力成为一条独立后训练主线 |
 | DeepSeek-V3.2 | [DeepSeek-V3.2](https://arxiv.org/abs/2512.02556), 2025-12-01 | 把 reasoning、agent 与长上下文效率进一步结合 | **`DSA`**、更大规模 RL、agentic task synthesis | 是通向 V4 的过渡桥梁 |
+| DeepSeek mHC | [mHC: Manifold-Constrained Hyper-Connections](https://arxiv.org/abs/2512.24880), 2025-12-31 | `HC` 相比传统残差更灵活，但会破坏 identity mapping，带来训练不稳和扩展性问题 | **Residual -> HC -> mHC**，把 `HC` 的残差映射投影到特定流形上，恢复 identity mapping，并结合基础设施优化保证效率 | 是 `V4` 之前连接结构演进的关键桥梁 |
 | DeepSeek-V4 | [DeepSeek-V4](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/resolve/main/DeepSeek_V4.pdf), 2026-04-24 | 把超长上下文、稳定训练、specialist post-training 和能力融合整合起来 | **`CSA/HCA`**、`mHC`、`GRM`、`OPD`、million-token curriculum | 前几代技术积累的阶段性总整合 |
 
 ## 四条演进线
@@ -106,7 +110,7 @@ DeepSeek 的代表动作是：
 - `FFN -> DeepSeekMoE`
 - `MHA / GQA / MQA` 之外的 `MLA`
 - 更长上下文里的 `DSA`、`CSA/HCA`
-- 通过 `mHC` 改善残差/连接结构
+- `Residual -> HC -> mHC` 这条连接结构演化线
 
 ### 3. 后训练线
 
@@ -343,7 +347,61 @@ R1 的意义不是“彻底抛弃 SFT”，而是证明了：
 
 这也是我们后续很适合单独补一轮的节点。
 
-### 6. V4：把前几代积累整合成一代 frontier 系统
+### 6. DeepSeek mHC：把“连接结构”单独拉成一个关键节点
+
+#### 它在解决什么
+
+传统 transformer 里的残差连接非常成功，但它也有明显边界：
+
+- 表达形式简单
+- 跨层连接方式固定
+- 当模型规模和训练深度继续增加时，连接结构本身也可能成为稳定性瓶颈
+
+`HC`（[Hyper-Connections](https://arxiv.org/abs/2409.19606)）这条线试图解决这个问题。它的核心想法是：
+
+> 不再把残差连接看成固定的“`x + f(x)`”，而是允许网络在不同深度间更灵活地调节和重排连接强度。
+
+但 `HC` 也带来了新的问题。根据 [mHC 论文](https://arxiv.org/abs/2512.24880) 的摘要：
+
+- `HC` 虽然提升了表达力
+- 但它会破坏残差连接里非常关键的 `identity mapping` 性质
+- 进而带来训练不稳定、可扩展性受限和额外的 memory access 开销
+
+#### 它的方法
+
+`mHC` 的关键动作是：
+
+- 不是放弃 `HC`
+- 而是对 `HC` 的残差映射空间施加流形约束
+- 通过投影恢复 identity mapping
+- 同时配合基础设施优化保证效率
+
+如果用更直觉的话说：
+
+> `HC` 是在说“连接可以更灵活”，`mHC` 是在说“这种灵活性必须被约束在一个可稳定训练的几何空间里”。
+
+#### 为什么这一步应该单独看
+
+如果直接把 `mHC` 淹没在 `V4` 的方法列表里，会看不出它真正的重要性。
+
+更好的学习顺序是：
+
+- 传统残差：稳定，但表达形式固定
+- `HC`：更灵活，但训练更难稳
+- `mHC`：在保留灵活性的同时，把稳定性问题重新补回来
+
+这一步很关键，因为它说明 DeepSeek 在 `V4` 前，不只是加了更长上下文注意力和更强后训练，而是连 **transformer 里最基础的连接拓扑** 都在重新设计。
+
+#### 和你提到的 Kimi 线索怎么对应
+
+你提到 `HC` 可以记作“来源于 Kimi 的那条连接结构思路”，这个直觉对理解很有帮助。  
+为了保持正文严谨，这份笔记目前先按公开论文命名写成：
+
+- `Residual -> HC -> mHC`
+
+如果后续我们单独补到 Kimi / Moonshot 的一手材料，再把这条关联写得更明确会更稳。
+
+### 7. V4：把前几代积累整合成一代 frontier 系统
 
 #### 它在解决什么
 
@@ -371,7 +429,7 @@ R1 的意义不是“彻底抛弃 SFT”，而是证明了：
 - `CSA/HCA`
   解决 million-token 级上下文里的注意力计算与信息保留问题
 - `mHC`
-  解决超深/超大训练中的连接稳定性问题
+  把 `HC` 的灵活连接能力转化为可在超深/超大训练中稳定工作的连接结构
 - `GRM`
   解决“难任务 reward 不好写成一个简单标量”的问题
 - `OPD`
@@ -477,12 +535,14 @@ V4 的意义，不是某一个孤立新技巧，而是：
 - V2 的本质是：用 `MoE + MLA` 把“大模型更便宜”这件事真正落地。
 - V3 的本质是：把超大稀疏模型的稳定训练和成本控制跑通。
 - R1 的本质是：把“推理能力能否靠 RL 自发生长”单独拉成一条主线。
+- `mHC` 的本质是：在连接结构层面，把“更强表达力”和“训练稳定性”重新兼得。
 - V4 的本质是：把长上下文、specialist RL、reward 建模和能力融合整合成一套 frontier pipeline。
 
 ## 注意事项
 
 - 这份笔记当前优先保证“主线正确、术语不乱、学习路径清晰”，不是一份逐章精读稿。
 - `V3.2` 部分当前只做桥梁定位，后续值得单独扩写一轮。
+- `mHC` 部分当前先按公开论文与 V4 报告建立最小主线，后续可以再补更细的数学与实现细节。
 - 视频是很好的直觉引子，但涉及版本定义、术语归属和时间线时，应以官方论文和官方页面为准。
 
 ## 验证
@@ -497,6 +557,8 @@ V4 的意义，不是某一个孤立新技巧，而是：
   - [DeepSeek-V3.2](https://arxiv.org/abs/2512.02556)
   - [DeepSeek-V3.2 Release](https://api-docs.deepseek.com/news/news251201)
   - [DeepSeek-V3.2-Exp](https://api-docs.deepseek.com/news/news250929)
+  - [Hyper-Connections](https://arxiv.org/abs/2409.19606)
+  - [mHC: Manifold-Constrained Hyper-Connections](https://arxiv.org/abs/2512.24880)
   - [DeepSeek-V4 Technical Report](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/resolve/main/DeepSeek_V4.pdf)
   - [DeepSeek Transparency](https://www.deepseek.com/en/transparency/)
   - [Bilibili 视频：深入解读 DeepSeek V1~V4](https://www.bilibili.com/video/BV1rpovBCEGH/?share_source=copy_web&vd_source=e11d1aa23ea058d42b676f314fe822a0)
