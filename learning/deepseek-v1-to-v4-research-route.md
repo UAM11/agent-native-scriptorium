@@ -71,13 +71,13 @@ flowchart LR
 
 | 阶段 | 代表材料 | 主要动机 | 核心方法 | 一句话本质 |
 | --- | --- | --- | --- | --- |
-| DeepSeek LLM / `V1` 起点 | [DeepSeek LLM](https://arxiv.org/abs/2401.02954), 2024-01-05 | 先把开源基础模型的 `scaling law`、数据和训练配比做对 | dense transformer、scaling law、后训练以 `SFT + DPO` 为主 | 先把“基础盘”打稳 |
-| DeepSeekMoE | [DeepSeekMoE](https://arxiv.org/abs/2401.06066), 2024-01-11 | dense 模型继续变大时，计算成本过高 | finer-grained experts、shared experts | 用更聪明的稀疏化替代简单堆参数 |
-| DeepSeek-V2 | [DeepSeek-V2](https://arxiv.org/abs/2405.04434), 2024-05-07 | 同时降低训练成本、推理成本和 KV cache 成本 | `DeepSeekMoE + MLA` | 稀疏 FFN 和压缩注意力一起落地 |
-| DeepSeek-V3 | [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437), 2024-12-27 | 让超大 MoE 模型在真实工程中稳定、便宜地训练出来 | `MLA`、`DeepSeekMoE`、aux-loss-free load balancing、`MTP` | 真正把“超大稀疏模型训练系统”跑通 |
+| DeepSeek LLM / `V1` 起点 | [DeepSeek LLM](https://arxiv.org/abs/2401.02954), 2024-01-05 | 先把开源基础模型的 `scaling law`、数据和训练配比做对 | dense transformer、scaling law、后训练以 `SFT + DPO` 为主 | 探究`scaling law`配比，先把“基础盘”打稳 |
+| DeepSeekMoE | [DeepSeekMoE](https://arxiv.org/abs/2401.06066), 2024-01-11 | dense 模型继续变大时，计算成本过高 | finer-grained experts、shared experts；**FFN -> DeepSeekMoE** | 用更聪明的稀疏化替代简单堆参数 |
+| DeepSeek-V2 | [DeepSeek-V2](https://arxiv.org/abs/2405.04434), 2024-05-07 | 同时降低训练成本、推理成本和 KV cache 成本 | `DeepSeekMoE + MLA`；**MHA -> MLA** | 稀疏 FFN 和压缩注意力一起落地 |
+| DeepSeek-V3 | [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437), 2024-12-27 | 让超大 MoE 模型在真实工程中稳定、便宜地训练出来 | `MLA`、`DeepSeekMoE`、aux-loss-free load balancing、`MTP`、 FP8 Training | 真正把“超大稀疏模型训练系统”跑通 |
 | DeepSeek-R1 | [DeepSeek-R1](https://arxiv.org/abs/2501.12948), 2025-01-22 | 让 reasoning 不只靠 SFT，而是靠 RL 真正长出来 | `R1-Zero`、pure RL、multi-stage RL、cold-start data | 推理能力成为一条独立后训练主线 |
-| DeepSeek-V3.2 | [DeepSeek-V3.2](https://arxiv.org/abs/2512.02556), 2025-12-01 | 把 reasoning、agent 与长上下文效率进一步结合 | `DSA`、更大规模 RL、agentic task synthesis | 是通向 V4 的过渡桥梁 |
-| DeepSeek-V4 | [DeepSeek-V4](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/resolve/main/DeepSeek_V4.pdf), 2026-04-24 | 把超长上下文、稳定训练、specialist post-training 和能力融合整合起来 | `CSA/HCA`、`mHC`、`GRM`、`OPD`、million-token curriculum | 前几代技术积累的阶段性总整合 |
+| DeepSeek-V3.2 | [DeepSeek-V3.2](https://arxiv.org/abs/2512.02556), 2025-12-01 | 把 reasoning、agent 与长上下文效率进一步结合 | **`DSA`**、更大规模 RL、agentic task synthesis | 是通向 V4 的过渡桥梁 |
+| DeepSeek-V4 | [DeepSeek-V4](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/resolve/main/DeepSeek_V4.pdf), 2026-04-24 | 把超长上下文、稳定训练、specialist post-training 和能力融合整合起来 | **`CSA/HCA`**、`mHC`、`GRM`、`OPD`、million-token curriculum | 前几代技术积累的阶段性总整合 |
 
 ## 四条演进线
 
