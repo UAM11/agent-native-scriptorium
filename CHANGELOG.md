@@ -206,3 +206,7 @@
 - 新增 `learning/deepseek-v1-to-v4-research-route.md`，以官方论文和报告为主线，梳理 `DeepSeek LLM / V1` 到 `V4` 的研究路线，并拆成预训练、架构、后训练与系统工程四条主线
 - 新增 `journal/daily/2026-04-29.md`，记录本次围绕 DeepSeek 技术演变与学习路径搭建的学习 session
 - 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该研究笔记入口
+
+### 维护偏好更新
+
+- 更新 `USER.md`，将默认协作习惯从“自动本地提交”升级为“任务完成后默认本地提交并推送远端，除非用户明确要求暂不 push”

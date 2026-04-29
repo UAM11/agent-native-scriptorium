@@ -26,7 +26,7 @@
   - `Harness: Codex`
 - 当切换到新的线程、新的 harness 或新的 agent 时，希望优先通过 `AGENT_INDEX.md`、`NOW.md` 与 `prompts/new-agent-bootstrap.md` 完成自举
 - 希望新 agent 在动手编辑前，先简短总结它对仓库定位、当前模式和关键规则的理解
-- 希望 agent 在每次完成任务后默认自动创建本地提交；是否推送远端可以按任务再判断
+- 希望 agent 在每次完成任务后默认自动创建本地提交，并默认继续推送到远端；只有在用户明确说先不要 push 时，才保留在本地
 
 ## 双仓偏好
 
