@@ -198,3 +198,11 @@
 - 新增并优化 `learning/harness-engineering-primer-mindmap.svg`，调整脑图排版、卡片布局与中文显示可读性
 - 在笔记中压缩整理成熟 harness 的六层结构：上下文管理、工具系统、执行编排、记忆与状态、评估与观测、约束校验与失败恢复
 - 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该入门笔记入口
+
+## 2026-04-29
+
+### DeepSeek 研究路线笔记
+
+- 新增 `learning/deepseek-v1-to-v4-research-route.md`，以官方论文和报告为主线，梳理 `DeepSeek LLM / V1` 到 `V4` 的研究路线，并拆成预训练、架构、后训练与系统工程四条主线
+- 新增 `journal/daily/2026-04-29.md`，记录本次围绕 DeepSeek 技术演变与学习路径搭建的学习 session
+- 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该研究笔记入口
