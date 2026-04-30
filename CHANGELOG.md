@@ -221,3 +221,5 @@
 - 在 `learning/deepseek-v1-to-v4-research-route.md` 中为第一阶段加入专题精读回链，形成“总纲 + 专题精读”双层结构
 - 新增 `journal/daily/2026-04-30.md`，记录本次围绕 `DeepSeek LLM` 论文阅读笔记的学习 session
 - 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该论文阅读笔记入口
+- 后续重写 `learning/deepseek-llm-v1-paper-reading.md`，减少与路线笔记的重复内容，并改为严格按 `Abstract -> Introduction -> Pre-Training -> Scaling Laws -> Alignment -> Evaluation -> Discussion -> Conclusion` 的原文顺序逐节解读
+- 在重写版本中补齐 `Evaluation / Discussion / Conclusion` 的细节，并把每节统一整理为“这一节在原文里做什么、按段落顺序梳理、关键图表/表格、与路线笔记的轻量关联”
