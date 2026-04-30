@@ -7,7 +7,8 @@
 当前入口：
 
 - `deepseek-llm-v1-paper-reading.md`：按 `DeepSeek LLM` 原文目录逐节梳理第一阶段，内嵌关键图表阅读卡，并与总路线笔记形成“总纲 + 精读”双层结构
-- `deepseek-moe-and-v2-paper-reading.md`：作为第二阶段专题入口，把 `DeepSeekMoE` 和 `DeepSeek-V2` 放在同一条“经济扩展”主线上一起阅读
+- `deepseek-moe-paper-reading.md`：第二阶段里偏架构发明的一篇，重点看 `DeepSeekMoE` 如何通过 finer-grained experts 和 shared experts 强化 expert specialization
+- `deepseek-v2-paper-reading.md`：第二阶段里偏系统整合的一篇，重点看 `DeepSeekMoE + MLA` 如何真正落成一代经济、强大、可部署的模型
 - `deepseek-v1-to-v4-research-route.md`：以官方论文和报告为主线，梳理 `DeepSeek LLM / V1` 到 `V4` 的技术演变，并把版本故事拆成预训练、架构、后训练和系统工程四条主线
 - `harness-engineering-primer-and-evolution-comparison.md`：一篇更轻量的入门笔记，用来快速区分 `Prompt Engineering`、`Context Engineering` 与 `Harness Engineering`
 - `llm-streaming-and-langgraph-streaming.md`：从 `prefill / decode / KV cache / SSE` 到 LangGraph `messages / updates / custom` 的一份流式输出学习笔记

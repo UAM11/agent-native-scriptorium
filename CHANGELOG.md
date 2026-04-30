@@ -228,6 +228,6 @@
 
 - 压缩 `learning/deepseek-v1-to-v4-research-route.md` 中第一阶段过长的精读段，把路线笔记重新收回到“总纲 / 地图”职责
 - 清理 `learning/deepseek-llm-v1-paper-reading.md` 中重复出现的“和路线笔记的关联”小节，并收束为文末统一回链
-- 新增 `learning/deepseek-moe-and-v2-paper-reading.md`，作为第二阶段专题入口，把 `DeepSeekMoE` 与 `DeepSeek-V2` 放回同一条“经济扩展”主线上一起阅读
-- 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充第二阶段专题笔记入口
-- 在 `journal/daily/2026-04-30.md` 中记录本次结构清理与第二阶段启动过程
+- 将原本合并的第二阶段入口笔记拆分为 `learning/deepseek-moe-paper-reading.md` 与 `learning/deepseek-v2-paper-reading.md`，保持与第一阶段一致的“两层结构”
+- 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中改为分别补充两篇单文陪读入口
+- 在 `journal/daily/2026-04-30.md` 中记录本次结构清理、拆分与第二阶段启动过程
