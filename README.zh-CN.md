@@ -53,6 +53,7 @@
 - [Daily Journal Template](templates/daily-journal-template.md)：公开安全的日常日志模板
 - [Weekly Review Template](templates/weekly-review-template.md)：周度复盘模板
 - [Harness Engineering 初探与演进比较](learning/harness-engineering-primer-and-evolution-comparison.md)：一篇更轻量的入门笔记，用来快速区分 `Prompt Engineering`、`Context Engineering` 与 `Harness Engineering`
+- [DeepSeek LLM 论文阅读笔记](learning/deepseek-llm-v1-paper-reading.md)：按 `DeepSeek LLM` 原文目录逐节梳理第一阶段，并在对应小节内嵌关键图表阅读卡
 - [DeepSeek V1-V4 研究路线笔记](learning/deepseek-v1-to-v4-research-route.md)：以官方论文和报告为主线，把 `DeepSeek LLM / V1 -> V4` 的故事拆成预训练、架构、后训练与系统工程四条并行主线
 - [LLM 流式输出与 LangGraph 流机制](learning/llm-streaming-and-langgraph-streaming.md)：从 `prefill / decode / KV cache / SSE` 到 LangGraph `messages / updates / custom` 的一份学习笔记
 - [Nanobot 主 Agent 与中控系统拆解](learning/nanobot-agent-control-center-analysis.md)：围绕主 agent / 中控 / 调度 / 队列 / 上下文管理系统拆解 `nanobot`，并外推到一个更强的万能服务中控系统设计

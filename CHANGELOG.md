@@ -212,3 +212,12 @@
 ### 维护偏好更新
 
 - 更新 `USER.md`，将默认协作习惯从“自动本地提交”升级为“任务完成后默认本地提交并推送远端，除非用户明确要求暂不 push”
+
+## 2026-04-30
+
+### DeepSeek LLM 论文阅读笔记
+
+- 新增 `learning/deepseek-llm-v1-paper-reading.md`，按原文目录完整梳理 `DeepSeek LLM`，并在对应小节内嵌关键图表与表格阅读卡
+- 在 `learning/deepseek-v1-to-v4-research-route.md` 中为第一阶段加入专题精读回链，形成“总纲 + 专题精读”双层结构
+- 新增 `journal/daily/2026-04-30.md`，记录本次围绕 `DeepSeek LLM` 论文阅读笔记的学习 session
+- 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中补充该论文阅读笔记入口

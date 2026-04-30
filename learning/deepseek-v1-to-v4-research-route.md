@@ -1,7 +1,7 @@
 # DeepSeek V1-V4 研究路线笔记
 
 - Created: 2026-04-29
-- Updated: 2026-04-29
+- Updated: 2026-04-30
 - Type: learning
 - Status: draft
 - Tags: deepseek, llm-training, pretraining, posttraining, moe, long-context, rl
@@ -144,6 +144,10 @@ DeepSeek 的代表动作是：
 ## 逐代拆解
 
 ### 1. DeepSeek LLM / `V1` 起点：先把 scaling law 和基础盘做对
+
+专题精读见：
+
+- [DeepSeek LLM 论文阅读笔记](deepseek-llm-v1-paper-reading.md)
 
 #### 它在解决什么
 
@@ -760,5 +764,6 @@ V4 的意义，不是某一个孤立新技巧，而是：
 
 ## 相关笔记
 
+- [DeepSeek LLM 论文阅读笔记](deepseek-llm-v1-paper-reading.md)
 - [从数据飞轮到 Agentic RL：垂直 AI Agent 的持续改进闭环](data-flywheel-agentic-rl-and-vertical-ai-agents.md)
 - 后续计划：补一篇 `MiMo-V2-Flash` 对照笔记，与本篇形成“双案例学习组”
