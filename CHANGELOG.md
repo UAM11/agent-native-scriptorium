@@ -231,3 +231,11 @@
 - 将原本合并的第二阶段入口笔记拆分为 `learning/deepseek-moe-paper-reading.md` 与 `learning/deepseek-v2-paper-reading.md`，保持与第一阶段一致的“两层结构”
 - 在 `learning/README.md`、`README.md` 与 `README.zh-CN.md` 中改为分别补充两篇单文陪读入口
 - 在 `journal/daily/2026-04-30.md` 中记录本次结构清理、拆分与第二阶段启动过程
+
+### DeepSeekMoE 陪读笔记加深
+
+- 重写 `learning/deepseek-moe-paper-reading.md`，把第二阶段前半段的 `DeepSeekMoE` 从浅层导读升级为更贴近 `V1` 风格的论文陪读笔记
+- 改为严格按 `Abstract -> Introduction -> Preliminaries -> Architecture -> Validation -> 16B -> Alignment -> 145B -> Related Work -> Conclusion` 的原文顺序逐节梳理
+- 补齐 `Section 4.4 Ablation Studies`、`Section 4.5 Analysis on Expert Specialization`、`Section 5.1.3 Evaluation Benchmarks` 等此前偏薄的部分
+- 将 `Figure 1-6` 与 `Table 1-6` 放回各自的论证位置，单独解释它们分别在证明什么，而不只做结果总括
+- 在 `journal/daily/2026-04-30.md` 中补记本次 `DeepSeekMoE` 陪读升级过程，并把第二阶段的下一步聚焦到 `DeepSeek-V2` 的同级别加深
